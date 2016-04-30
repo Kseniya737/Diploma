@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?><layout defaultCloseOperation="2" name="Form" prefHeight="383px" prefWidth="822px" windowOpened="formWindowOpened">
+  <widget name="modelGrid" parent="Form" prefHeight="144px" prefWidth="768px" type="DbGridDesignInfo">
+    <treeDesignInfo/>
+    <rowsColumnsDesignInfo>
+      <rowsDatasource entityId="138613216902339" field="false"/>
+    </rowsColumnsDesignInfo>
+    <column name="Государственный номер">
+      <controlInfo classHint="DbLabelDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
+      <columnsDisplayField/>
+      <datamodelElement entityId="138613216902339" fieldName="CARS_ID"/>
+      <columnsDatasource/>
+      <cellsDatasource/>
+      <cellDesignInfo>
+        <rowsKeyField/>
+        <columnsKeyField/>
+        <cellValueField/>
+      </cellDesignInfo>
+      <headerStyle>
+        <nativeFont name="Tahoma" size="11"/>
+      </headerStyle>
+    </column>
+    <column name="Марка">
+      <controlInfo classHint="DbComboDesignInfo" name="view" prefHeight="0px" prefWidth="0px">
+        <valueField entityId="138667466123301" fieldName="CAR_ID"/>
+        <displayField entityId="138667466123301" fieldName="CAR"/>
+      </controlInfo>
+      <columnsDisplayField/>
+      <datamodelElement entityId="138613216902339" fieldName="CAR"/>
+      <columnsDatasource/>
+      <cellsDatasource/>
+      <cellDesignInfo>
+        <rowsKeyField/>
+        <columnsKeyField/>
+        <cellValueField/>
+      </cellDesignInfo>
+      <headerStyle>
+        <nativeFont name="Tahoma" size="11"/>
+      </headerStyle>
+    </column>
+    <column name="Цвет">
+      <controlInfo classHint="DbComboDesignInfo" name="view" prefHeight="0px" prefWidth="0px">
+        <valueField entityId="138613305822781" fieldName="COLOR_ID"/>
+        <displayField entityId="138613305822781" fieldName="COLOR"/>
+      </controlInfo>
+      <columnsDisplayField/>
+      <datamodelElement entityId="138613216902339" fieldName="COLOR"/>
+      <columnsDatasource/>
+      <cellsDatasource/>
+      <cellDesignInfo>
+        <rowsKeyField/>
+        <columnsKeyField/>
+        <cellValueField/>
+      </cellDesignInfo>
+      <headerStyle>
+        <nativeFont name="Tahoma" size="11"/>
+      </headerStyle>
+    </column>
+    <column name="Год">
+      <controlInfo classHint="DbLabelDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
+      <columnsDisplayField/>
+      <datamodelElement entityId="138613216902339" fieldName="YEAR_OF_CAR"/>
+      <columnsDatasource/>
+      <cellsDatasource/>
+      <cellDesignInfo>
+        <rowsKeyField/>
+        <columnsKeyField/>
+        <cellValueField/>
+      </cellDesignInfo>
+      <headerStyle>
+        <nativeFont name="Tahoma" size="11"/>
+      </headerStyle>
+    </column>
+    <column name="Имя владельца">
+      <controlInfo classHint="DbComboDesignInfo" name="view" prefHeight="0px" prefWidth="0px">
+        <valueField entityId="138613217270566" fieldName="CLIENTS_ID"/>
+        <displayField entityId="138613217270566" fieldName="fullName"/>
+      </controlInfo>
+      <columnsDisplayField/>
+      <datamodelElement entityId="138613216902339" fieldName="OWNER_ID"/>
+      <columnsDatasource/>
+      <cellsDatasource/>
+      <cellDesignInfo>
+        <rowsKeyField/>
+        <columnsKeyField/>
+        <cellValueField/>
+      </cellDesignInfo>
+      <headerStyle>
+        <nativeFont name="Tahoma" size="11"/>
+      </headerStyle>
+    </column>
+    <constraints bottom="155px" left="24px" right="30px" top="84px" type="MarginConstraintsDesignInfo"/>
+  </widget>
+  <widget actionPerformed="AddCarActionPerformed" name="AddCar" parent="Form" prefHeight="23px" prefWidth="96px" text="Добавить" type="ButtonDesignInfo">
+    <constraints bottom="84px" height="23px" left="24px" type="MarginConstraintsDesignInfo" width="96px"/>
+  </widget>
+  <widget actionPerformed="DeleteCarActionPerformed" name="DeleteCar" parent="Form" prefHeight="23px" prefWidth="84px" text="Удалить" type="ButtonDesignInfo">
+    <constraints bottom="84px" height="23px" left="144px" type="MarginConstraintsDesignInfo" width="84px"/>
+  </widget>
+  <widget actionPerformed="SearchActionPerformed" name="Search" parent="Form" prefHeight="25px" prefWidth="84px" text="Поиск" type="ButtonDesignInfo">
+    <constraints bottom="94px" height="25px" right="27px" type="MarginConstraintsDesignInfo" width="84px"/>
+  </widget>
+  <widget name="textField" parent="Form" prefHeight="24px" prefWidth="96px" type="TextFieldDesignInfo">
+    <constraints bottom="95px" height="24px" right="123px" type="MarginConstraintsDesignInfo" width="96px"/>
+  </widget>
+  <widget actionPerformed="SaveActionPerformed" name="Save" parent="Form" prefHeight="46px" prefWidth="126px" text="Сохранить" type="ButtonDesignInfo">
+    <easFont name="Tahoma" size="14" style="1"/>
+    <constraints bottom="13px" height="46px" right="21px" type="MarginConstraintsDesignInfo" width="126px"/>
+  </widget>
+  <widget foregroundColor="#003399" horizontalAlignment="0" name="label" parent="Form" prefHeight="48px" prefWidth="468px" text="Данные об автомобилях" type="LabelDesignInfo">
+    <easFont name="Tahoma" size="24" style="3"/>
+    <constraints height="48px" left="180px" top="12px" type="MarginConstraintsDesignInfo" width="468px"/>
+  </widget>
+  <layout type="MarginLayoutDesignInfo"/>
+</layout>

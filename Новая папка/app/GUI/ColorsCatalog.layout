@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><layout title="" view="view">
+  <AnchorsPane background="#ffffff" cursor="0" name="view" prefHeight="421px" prefWidth="570px"/>
+  <Label cursor="0" horizontalAlignment="0" name="label" parent="view" prefHeight="30px" prefWidth="240px" text="Перечень цветов">
+    <font family="Tahoma" size="12" style="1"/>
+    <AnchorsPaneConstraints height="30px" left="170px" top="20px" width="240px"/>
+  </Label>
+  <ModelGrid cursor="0" name="modelGrid" parent="view" prefHeight="240px" prefWidth="480px">
+    <AnchorsPaneConstraints height="240px" left="50px" top="100px" width="480px"/>
+  </ModelGrid>
+  <Button cursor="0" name="button" parent="view" prefHeight="30px" prefWidth="100px" text="button">
+    <AnchorsPaneConstraints bottom="29px" height="30px" left="50px" width="100px"/>
+  </Button>
+  <Button cursor="0" name="button1" parent="view" prefHeight="30px" prefWidth="100px" text="button1">
+    <AnchorsPaneConstraints bottom="29px" height="30px" left="160px" width="100px"/>
+  </Button>
+  <Button cursor="0" name="button2" parent="view" prefHeight="30px" prefWidth="100px" text="button2">
+    <AnchorsPaneConstraints bottom="29px" height="30px" right="40px" width="100px"/>
+  </Button>
+  <Button cursor="0" name="button3" parent="view" prefHeight="30px" prefWidth="100px" text="button3">
+    <AnchorsPaneConstraints height="30px" left="350px" top="60px" width="100px"/>
+  </Button>
+  <TextField name="textField" parent="view" prefHeight="30px" prefWidth="170px" text="textField">
+    <AnchorsPaneConstraints height="30px" left="170px" top="60px" width="170px"/>
+  </TextField>
+</layout>

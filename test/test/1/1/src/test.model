@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><datamodel>
+  <parametersEntity entityHeight="200" entityIconified="false" entityLocationX="-1" entityLocationY="-1" entityWidth="150"/>
+  <entity Title="SERVICE" entityHeight="200" entityIconified="false" entityId="138322938126603" entityLocationX="649" entityLocationY="4" entityWidth="150" tableAlias="t2" tableName="SERVICE" tableSchemaName=""/>
+  <entity Title="CLIENTS" entityHeight="200" entityIconified="false" entityId="138322936891282" entityLocationX="310" entityLocationY="3" entityWidth="150" tableAlias="t" tableName="CLIENTS" tableSchemaName=""/>
+  <entity Title="WORKERS" entityHeight="200" entityIconified="false" entityId="138322938130846" entityLocationX="472" entityLocationY="2" entityWidth="150" tableAlias="t3" tableName="WORKERS" tableSchemaName=""/>
+  <entity Title="CARS" entityHeight="200" entityIconified="false" entityId="138322935854591" entityLocationX="153" entityLocationY="1" entityWidth="150" tableAlias="t1" tableName="CARS" tableSchemaName=""/>
+</datamodel>

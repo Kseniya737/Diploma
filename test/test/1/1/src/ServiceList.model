@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><datamodel>
+  <parameters>
+    <parameter description="" name="Defect" nullable="true" parameterMode="1" precision="0" scale="0" selectionForm="null" signed="true" size="100" type="12" typeName="VARCHAR"/>
+  </parameters>
+  <parametersEntity entityHeight="200" entityIconified="false" entityLocationX="12" entityLocationY="12" entityWidth="150"/>
+  <entity Name="qService" Title="qService" entityHeight="200" entityIconified="false" entityId="138616102891554" entityLocationX="256" entityLocationY="12" entityWidth="173" queryId="qService" tableName="" tableSchemaName=""/>
+  <relation leftEntityId="-1" leftEntityParameterName="Defect" rightEntityId="138616102891554" rightEntityParameterName="Defect"/>
+</datamodel>

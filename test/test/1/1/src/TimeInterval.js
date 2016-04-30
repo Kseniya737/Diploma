@@ -1,0 +1,5 @@
+/**
+ * 
+ * @author ксюша
+ * @name TimeInterval
+ */

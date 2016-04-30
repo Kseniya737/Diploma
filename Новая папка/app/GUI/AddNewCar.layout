@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><layout title="" view="view">
+  <AnchorsPane background="#ffffff" cursor="0" name="view" prefHeight="389px" prefWidth="753px"/>
+  <ModelGrid cursor="0" data="qCars" name="modelGrid" parent="view" prefHeight="180px" prefWidth="710px" rowsHeight="20">
+    <AnchorsPaneConstraints height="180px" left="20px" top="120px" width="710px"/>
+    <ServiceGridColumn name="colService" resizable="true"/>
+    <ModelGridColumn field="cars_id" name="colCars_id" title="colCars_id" visible="false" width="96px">
+      <ModelFormattedField format=""/>
+    </ModelGridColumn>
+    <ModelGridColumn field="Lcar" name="colCar" title="Марка" width="96px">
+      <ModelCombo displayField="car" displayList="qCar"/>
+    </ModelGridColumn>
+    <ModelGridColumn field="Lcolor" name="colColor" title="Цвет" width="95px">
+      <ModelCombo displayField="color" displayList="qColors"/>
+    </ModelGridColumn>
+    <ModelGridColumn field="owner_id" name="colOwner_id" title="colOwner_id" visible="false" width="96px">
+      <ModelSpin max="1.7976931348623157E308" min="-1.7976931348623157E308"/>
+    </ModelGridColumn>
+    <ModelGridColumn field="year_of_car" name="colYear_of_car" title="Год выпуска" width="95px">
+      <ModelFormattedField format=""/>
+    </ModelGridColumn>
+    <ModelGridColumn field="vin" name="colVin" title="VIN" width="96px">
+      <ModelFormattedField format=""/>
+    </ModelGridColumn>
+    <ModelGridColumn field="rnum" name="column" title="Номер регистрации" width="95px">
+      <ModelFormattedField format=""/>
+    </ModelGridColumn>
+  </ModelGrid>
+  <Button cursor="0" name="btnAdd" parent="view" prefHeight="30px" prefWidth="100px" text="Добавить">
+    <AnchorsPaneConstraints bottom="29px" height="30px" left="20px" width="100px"/>
+  </Button>
+  <Button cursor="0" name="btnSave" parent="view" prefHeight="30px" prefWidth="100px" text="Сохранить">
+    <AnchorsPaneConstraints bottom="29px" height="30px" right="23px" width="100px"/>
+  </Button>
+  <Label cursor="0" horizontalAlignment="0" name="label9" parent="view" prefHeight="30px" prefWidth="250px" text="Текущие данные">
+    <font family="Monospaced" size="14" style="1"/>
+    <AnchorsPaneConstraints height="30px" left="270px" top="20px" width="250px"/>
+  </Label>
+  <Button cursor="0" name="Search" parent="view" prefHeight="30px" prefWidth="90px" text="Поиск">
+    <AnchorsPaneConstraints height="30px" left="440px" top="60px" width="90px"/>
+  </Button>
+  <TextField cursor="0" name="textField" parent="view" prefHeight="30px" prefWidth="160px">
+    <AnchorsPaneConstraints height="30px" left="260px" top="60px" width="160px"/>
+  </TextField>
+  <Button cursor="0" name="btnOK" parent="view" prefHeight="30px" prefWidth="100px" text="Выбрать">
+    <AnchorsPaneConstraints bottom="29px" height="30px" left="140px" width="100px"/>
+  </Button>
+</layout>

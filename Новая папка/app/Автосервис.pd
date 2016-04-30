@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><datamodel datasource="null">
+  <fieldsEntity entityHeight="84" entityIconified="false" entityId="145535100120316" entityLocationX="26" entityLocationY="223" entityWidth="150" tableName="DETAILS"/>
+  <fieldsEntity entityHeight="187" entityIconified="false" entityId="138313034709972" entityLocationX="225" entityLocationY="2" entityWidth="167" tableName="Service"/>
+  <fieldsEntity entityHeight="90" entityIconified="false" entityId="145597302468710" entityLocationX="244" entityLocationY="360" entityWidth="150" tableName="DetailsToBill"/>
+  <fieldsEntity entityHeight="159" entityIconified="false" entityId="138313036419976" entityLocationX="23" entityLocationY="35" entityWidth="150" tableName="Workers"/>
+  <fieldsEntity entityHeight="77" entityIconified="false" entityId="138667447986336" entityLocationX="666" entityLocationY="22" entityWidth="150" tableName="Car"/>
+  <fieldsEntity entityHeight="74" entityIconified="false" entityId="138562889145259" entityLocationX="670" entityLocationY="111" entityWidth="151" tableName="Color"/>
+  <fieldsEntity entityHeight="71" entityIconified="false" entityId="145562879213919" entityLocationX="458" entityLocationY="297" entityWidth="156" tableName="ServiceType"/>
+  <fieldsEntity entityHeight="154" entityIconified="false" entityId="138313025125179" entityLocationX="462" entityLocationY="25" entityWidth="126" tableName="Cars"/>
+  <fieldsEntity entityHeight="137" entityIconified="false" entityId="145588376483875" entityLocationX="239" entityLocationY="209" entityWidth="150" tableName="Bills"/>
+  <fieldsEntity entityHeight="142" entityIconified="false" entityId="138313038044740" entityLocationX="661" entityLocationY="193" entityWidth="160" tableName="Clients"/>
+</datamodel>

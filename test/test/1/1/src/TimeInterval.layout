@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><layout defaultCloseOperation="2" name="Form" prefHeight="405px" prefWidth="597px">
+  <widget name="panel" parent="Form" prefHeight="240px" prefWidth="480px" type="PanelDesignInfo">
+    <layout type="MarginLayoutDesignInfo"/>
+    <constraints height="240px" left="36px" top="12px" type="MarginConstraintsDesignInfo" width="480px"/>
+  </widget>
+  <widget name="modelCheckBox81" parent="panel" prefHeight="20px" prefWidth="100px" type="DbCheckDesignInfo">
+    <constraints bottom="16px" height="20px" left="252px" type="MarginConstraintsDesignInfo" width="100px"/>
+  </widget>
+  <widget name="modelDate1" parent="panel" prefHeight="20px" prefWidth="100px" type="DbDateDesignInfo">
+    <constraints bottom="16px" height="20px" right="32px" type="MarginConstraintsDesignInfo" width="100px"/>
+  </widget>
+  <widget name="modelCheckBox10" parent="panel" prefHeight="20px" prefWidth="100px" type="DbCheckDesignInfo">
+    <constraints height="20px" left="252px" top="96px" type="MarginConstraintsDesignInfo" width="100px"/>
+  </widget>
+  <widget name="modelCheckBox9" parent="panel" prefHeight="20px" prefWidth="100px" type="DbCheckDesignInfo">
+    <constraints height="20px" left="252px" top="132px" type="MarginConstraintsDesignInfo" width="100px"/>
+  </widget>
+  <widget name="modelCheckBox8" parent="panel" prefHeight="20px" prefWidth="100px" type="DbCheckDesignInfo">
+    <constraints bottom="52px" height="20px" left="252px" type="MarginConstraintsDesignInfo" width="100px"/>
+  </widget>
+  <widget name="modelCheckBox7" parent="panel" prefHeight="20px" prefWidth="100px" type="DbCheckDesignInfo">
+    <constraints height="20px" left="252px" top="24px" type="MarginConstraintsDesignInfo" width="100px"/>
+  </widget>
+  <widget name="modelCheckBox6" parent="panel" prefHeight="20px" prefWidth="100px" type="DbCheckDesignInfo">
+    <constraints height="20px" left="252px" top="60px" type="MarginConstraintsDesignInfo" width="100px"/>
+  </widget>
+  <widget name="modelDate" parent="panel" prefHeight="20px" prefWidth="100px" type="DbDateDesignInfo">
+    <constraints bottom="16px" height="20px" left="108px" type="MarginConstraintsDesignInfo" width="100px"/>
+  </widget>
+  <widget name="modelCheckBox" parent="panel" prefHeight="20px" prefWidth="100px" type="DbCheckDesignInfo">
+    <constraints height="20px" left="24px" top="24px" type="MarginConstraintsDesignInfo" width="100px"/>
+  </widget>
+  <widget name="modelCheckBox1" parent="panel" prefHeight="20px" prefWidth="100px" type="DbCheckDesignInfo">
+    <constraints height="20px" left="24px" top="60px" type="MarginConstraintsDesignInfo" width="100px"/>
+  </widget>
+  <widget name="modelCheckBox2" parent="panel" prefHeight="20px" prefWidth="100px" type="DbCheckDesignInfo">
+    <constraints height="20px" left="24px" top="96px" type="MarginConstraintsDesignInfo" width="100px"/>
+  </widget>
+  <widget name="modelCheckBox3" parent="panel" prefHeight="20px" prefWidth="100px" type="DbCheckDesignInfo">
+    <constraints height="20px" left="24px" top="132px" type="MarginConstraintsDesignInfo" width="100px"/>
+  </widget>
+  <widget name="modelCheckBox4" parent="panel" prefHeight="20px" prefWidth="100px" type="DbCheckDesignInfo">
+    <constraints bottom="52px" height="20px" left="24px" type="MarginConstraintsDesignInfo" width="100px"/>
+  </widget>
+  <widget name="modelCheckBox5" parent="panel" prefHeight="20px" prefWidth="100px" type="DbCheckDesignInfo">
+    <constraints bottom="16px" height="20px" left="24px" type="MarginConstraintsDesignInfo" width="100px"/>
+  </widget>
+  <widget name="modelSpin" parent="panel" prefHeight="20px" prefWidth="100px" type="DbSpinDesignInfo">
+    <constraints height="20px" left="132px" top="60px" type="MarginConstraintsDesignInfo" width="100px"/>
+  </widget>
+  <widget name="modelSpin1" parent="panel" prefHeight="20px" prefWidth="100px" type="DbSpinDesignInfo">
+    <constraints height="20px" right="20px" top="60px" type="MarginConstraintsDesignInfo" width="100px"/>
+  </widget>
+  <layout type="MarginLayoutDesignInfo"/>
+</layout>

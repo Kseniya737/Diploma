@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><layout title="" view="view">
+  <AnchorsPane background="#ffffff" cursor="0" name="view" prefHeight="562px" prefWidth="649px"/>
+  <Label cursor="0" horizontalAlignment="0" name="label" parent="view" prefHeight="30px" prefWidth="310px" text="Внести данные об автомобиле">
+    <font family="Tahoma" size="11" style="1"/>
+    <AnchorsPaneConstraints height="30px" left="170px" top="20px" width="310px"/>
+  </Label>
+  <Label cursor="0" horizontalAlignment="4" name="label1" parent="view" prefHeight="30px" prefWidth="100px" text="Гос. номер">
+    <AnchorsPaneConstraints height="30px" left="100px" top="110px" width="100px"/>
+  </Label>
+  <Label cursor="0" horizontalAlignment="4" name="label2" parent="view" prefHeight="30px" prefWidth="100px" text="Марка">
+    <AnchorsPaneConstraints height="30px" left="100px" top="160px" width="100px"/>
+  </Label>
+  <Label cursor="0" horizontalAlignment="4" name="label3" parent="view" prefHeight="30px" prefWidth="100px" text="Цвет">
+    <AnchorsPaneConstraints height="30px" left="100px" top="210px" width="100px"/>
+  </Label>
+  <Label cursor="0" horizontalAlignment="4" name="label4" parent="view" prefHeight="30px" prefWidth="100px" text="Год выпуска">
+    <AnchorsPaneConstraints height="30px" left="100px" top="260px" width="100px"/>
+  </Label>
+  <Label cursor="0" horizontalAlignment="4" name="label5" parent="view" prefHeight="30px" prefWidth="100px" text="VIN">
+    <AnchorsPaneConstraints height="30px" left="100px" top="310px" width="100px"/>
+  </Label>
+  <ModelFormattedField cursor="0" data="qCars" field="cursor.rnum" format="" name="modelFormattedField" parent="view" prefHeight="30px" prefWidth="240px">
+    <AnchorsPaneConstraints height="30px" left="210px" top="110px" width="240px"/>
+  </ModelFormattedField>
+  <ModelCombo cursor="0" data="qCars" displayField="car" displayList="qCar" field="cursor.lCar" name="modelCombo" parent="view" prefHeight="30px" prefWidth="240px">
+    <AnchorsPaneConstraints height="30px" left="210px" top="160px" width="240px"/>
+  </ModelCombo>
+  <ModelCombo cursor="0" data="qCars" displayField="color" displayList="qColors" field="cursor.lColor" name="modelCombo1" parent="view" prefHeight="30px" prefWidth="240px">
+    <AnchorsPaneConstraints height="30px" left="210px" top="210px" width="240px"/>
+  </ModelCombo>
+  <ModelFormattedField cursor="0" data="qCars" field="cursor.year_of_car" format="" name="modelFormattedField1" parent="view" prefHeight="30px" prefWidth="240px">
+    <AnchorsPaneConstraints height="30px" left="210px" top="260px" width="240px"/>
+  </ModelFormattedField>
+  <ModelFormattedField cursor="0" data="qCars" field="cursor.vin" format="" name="modelFormattedField2" parent="view" prefHeight="30px" prefWidth="240px">
+    <AnchorsPaneConstraints height="30px" left="210px" top="310px" width="240px"/>
+  </ModelFormattedField>
+  <ModelGrid cursor="0" data="qCars" name="modelGrid" parent="view" prefHeight="130px" prefWidth="610px" rowsHeight="20">
+    <AnchorsPaneConstraints height="130px" left="20px" top="370px" width="610px"/>
+    <ServiceGridColumn name="colService" resizable="true"/>
+    <ModelGridColumn field="cars_id" name="colCars_id" title="Номер" visible="false" width="81px">
+      <ModelFormattedField format=""/>
+    </ModelGridColumn>
+    <ModelGridColumn field="lCar" name="colCar" title="Марка" width="81px">
+      <ModelCombo displayField="car" displayList="qCar"/>
+    </ModelGridColumn>
+    <ModelGridColumn field="lColor" name="colColor" title="Цвет" width="81px">
+      <ModelCombo displayField="color" displayList="qColors"/>
+    </ModelGridColumn>
+    <ModelGridColumn field="owner_id" name="colOwner_id" title="colOwner_id" visible="false" width="82px">
+      <ModelSpin max="1.7976931348623157E308" min="-1.7976931348623157E308"/>
+    </ModelGridColumn>
+    <ModelGridColumn field="year_of_car" name="colYear_of_car" title="Год выпуска" width="81px">
+      <ModelFormattedField format=""/>
+    </ModelGridColumn>
+    <ModelGridColumn field="vin" name="colVin" title="VIN" width="82px">
+      <ModelFormattedField format=""/>
+    </ModelGridColumn>
+    <ModelGridColumn field="rnum" name="colRnum" title="Номер" width="81px">
+      <ModelFormattedField format=""/>
+    </ModelGridColumn>
+  </ModelGrid>
+  <Button cursor="0" name="btnSave" parent="view" prefHeight="30px" prefWidth="100px" text="Сохранить">
+    <AnchorsPaneConstraints bottom="12px" height="30px" left="270px" width="100px"/>
+  </Button>
+  <Button cursor="0" name="btnAdd" parent="view" prefHeight="30px" prefWidth="100px" text="Добавить">
+    <AnchorsPaneConstraints height="30px" left="270px" top="60px" width="100px"/>
+  </Button>
+  <Button cursor="0" name="btnModel" parent="view" prefHeight="30px" prefWidth="100px" text="Выбрать">
+    <AnchorsPaneConstraints height="30px" right="89px" top="160px" width="100px"/>
+  </Button>
+  <Button cursor="0" name="btnColore" parent="view" prefHeight="30px" prefWidth="100px" text="Выбрать">
+    <AnchorsPaneConstraints height="30px" right="89px" top="210px" width="100px"/>
+  </Button>
+</layout>

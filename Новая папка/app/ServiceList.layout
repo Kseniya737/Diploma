@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><layout title="" view="view">
+  <TextField cursor="0" name="textField" prefHeight="0px" prefWidth="0px"/>
+  <AnchorsPane cursor="0" name="view" prefHeight="440px" prefWidth="1050px"/>
+  <Button cursor="0" name="Search" parent="view" prefHeight="24px" prefWidth="96px" text="Поиск" toolTipText="&lt;нулевое значение&gt;">
+    <font family="Monospaced" size="11" style="1"/>
+    <AnchorsPaneConstraints bottom="86px" height="24px" right="224px" width="96px"/>
+  </Button>
+  <Label cursor="0" horizontalAlignment="0" name="label" parent="view" prefHeight="36px" prefWidth="324px" text="Текущие услуги ">
+    <font family="Monospaced" size="12" style="1"/>
+    <AnchorsPaneConstraints height="36px" left="420px" top="20px" width="324px"/>
+  </Label>
+  <Label cursor="0" horizontalAlignment="4" name="label1" parent="view" prefHeight="24px" prefWidth="216px" text=" Введите услугу для поиска">
+    <font family="Monospaced" size="10" style="1"/>
+    <AnchorsPaneConstraints bottom="86px" height="24px" left="230px" width="216px"/>
+  </Label>
+  <TextField cursor="0" name="textField1" parent="view" prefHeight="24px" prefWidth="256px">
+    <AnchorsPaneConstraints bottom="86px" height="24px" left="460px" width="256px"/>
+  </TextField>
+  <ModelGrid cursor="0" data="qAllService" name="modelGrid" parent="view" prefHeight="220px" prefWidth="990px" rowsHeight="20">
+    <AnchorsPaneConstraints height="220px" left="30px" top="80px" width="990px"/>
+    <ServiceGridColumn name="colService" resizable="true"/>
+    <ModelGridColumn field="service_id" name="colService_id" title="colService_id" visible="false" width="105px">
+      <ModelSpin max="1.7976931348623157E308" min="-1.7976931348623157E308"/>
+    </ModelGridColumn>
+    <ModelGridColumn field="lServiceType" name="colServicetype" title="Тип услуги" width="106px">
+      <ModelCombo displayField="type" displayList="qServiceType"/>
+    </ModelGridColumn>
+    <ModelGridColumn field="cost" name="colCost" title="Стоимость" width="105px">
+      <ModelFormattedField format=""/>
+    </ModelGridColumn>
+    <ModelGridColumn field="lCar" name="colCars_id" title="Номер автомобиля" width="106px">
+      <ModelCombo displayField="rnum" displayList="qCars"/>
+    </ModelGridColumn>
+    <ModelGridColumn field="lClient" name="colClients_id" title="Клиент" width="105px">
+      <ModelCombo displayField="fullName" displayList="qClients"/>
+    </ModelGridColumn>
+    <ModelGridColumn field="lWorker" name="colWorkers_id" title="Работник" width="106px">
+      <ModelCombo displayField="fullName" displayList="qWorkers"/>
+    </ModelGridColumn>
+    <ModelGridColumn field="entry_date" name="colEntry_date" title="Дата поступления" width="105px">
+      <ModelDate format="dd.MM.yyyy HH:mm:ss.SSS"/>
+    </ModelGridColumn>
+    <ModelGridColumn field="completion_date" name="colCompletion_date" title="Дата завершения" width="106px">
+      <ModelDate format="dd.MM.yyyy HH:mm:ss.SSS"/>
+    </ModelGridColumn>
+    <ModelGridColumn field="bill" name="colBill" title="colBill" visible="false" width="105px">
+      <ModelSpin max="1.7976931348623157E308" min="-1.7976931348623157E308"/>
+    </ModelGridColumn>
+  </ModelGrid>
+  <Button cursor="0" name="btnSave" parent="view" prefHeight="30px" prefWidth="100px" text="Сохранить">
+    <AnchorsPaneConstraints bottom="30px" height="30px" left="540px" width="100px"/>
+  </Button>
+</layout>

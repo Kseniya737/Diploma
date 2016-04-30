@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?><layout defaultCloseOperation="2" name="Form" prefHeight="400px" prefWidth="791px" windowOpened="formWindowOpened">
+  <widget name="modelGrid" parent="Form" prefHeight="204px" prefWidth="767px" type="DbGridDesignInfo">
+    <treeDesignInfo/>
+    <rowsColumnsDesignInfo>
+      <rowsDatasource entityId="138616102891554" field="false"/>
+    </rowsColumnsDesignInfo>
+    <column name="Номер автомобиля">
+      <controlInfo classHint="DbLabelDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
+      <columnsDisplayField/>
+      <datamodelElement entityId="138616102891554" fieldName="CARS_ID"/>
+      <columnsDatasource/>
+      <cellsDatasource/>
+      <cellDesignInfo>
+        <rowsKeyField/>
+        <columnsKeyField/>
+        <cellValueField/>
+      </cellDesignInfo>
+      <headerStyle>
+        <nativeFont name="Tahoma" size="11"/>
+      </headerStyle>
+    </column>
+    <column name="Неисправность">
+      <controlInfo classHint="DbLabelDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
+      <columnsDisplayField/>
+      <datamodelElement entityId="138616102891554" fieldName="Defect"/>
+      <columnsDatasource/>
+      <cellsDatasource/>
+      <cellDesignInfo>
+        <rowsKeyField/>
+        <columnsKeyField/>
+        <cellValueField/>
+      </cellDesignInfo>
+      <headerStyle>
+        <nativeFont name="Tahoma" size="11"/>
+      </headerStyle>
+    </column>
+    <column name="Стоимость работ">
+      <controlInfo classHint="DbLabelDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
+      <columnsDisplayField/>
+      <datamodelElement entityId="138616102891554" fieldName="Cost"/>
+      <columnsDatasource/>
+      <cellsDatasource/>
+      <cellDesignInfo>
+        <rowsKeyField/>
+        <columnsKeyField/>
+        <cellValueField/>
+      </cellDesignInfo>
+      <headerStyle>
+        <nativeFont name="Tahoma" size="11"/>
+      </headerStyle>
+    </column>
+    <column name="Дата поступления">
+      <controlInfo classHint="DbDateDesignInfo" dateFormat="dd.MM.YYYY" name="view" prefHeight="0px" prefWidth="0px"/>
+      <columnsDisplayField/>
+      <datamodelElement entityId="138616102891554" fieldName="ENTRY_DATE"/>
+      <columnsDatasource/>
+      <cellsDatasource/>
+      <cellDesignInfo>
+        <rowsKeyField/>
+        <columnsKeyField/>
+        <cellValueField/>
+      </cellDesignInfo>
+      <headerStyle>
+        <nativeFont name="Tahoma" size="11"/>
+      </headerStyle>
+    </column>
+    <column name="Дата завершения работ">
+      <controlInfo classHint="DbDateDesignInfo" dateFormat="dd.MM.YYYY" name="view" prefHeight="0px" prefWidth="0px"/>
+      <columnsDisplayField/>
+      <datamodelElement entityId="138616102891554" fieldName="COMPLETION_DATE"/>
+      <columnsDatasource/>
+      <cellsDatasource/>
+      <cellDesignInfo>
+        <rowsKeyField/>
+        <columnsKeyField/>
+        <cellValueField/>
+      </cellDesignInfo>
+      <headerStyle>
+        <nativeFont name="Tahoma" size="11"/>
+      </headerStyle>
+    </column>
+    <column name="Фамилия работника">
+      <controlInfo classHint="DbComboDesignInfo" name="view" prefHeight="0px" prefWidth="0px">
+        <valueField entityId="138616102891554" fieldName="W_LNAME"/>
+        <displayField entityId="138616102891554" fieldName="W_LNAME"/>
+      </controlInfo>
+      <columnsDisplayField/>
+      <datamodelElement entityId="138616102891554" fieldName="W_LNAME"/>
+      <columnsDatasource/>
+      <cellsDatasource/>
+      <cellDesignInfo>
+        <rowsKeyField/>
+        <columnsKeyField/>
+        <cellValueField/>
+      </cellDesignInfo>
+      <headerStyle>
+        <nativeFont name="Tahoma" size="11"/>
+      </headerStyle>
+    </column>
+    <column name="Специальность работника">
+      <controlInfo classHint="DbLabelDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
+      <columnsDisplayField/>
+      <datamodelElement entityId="138616102891554" fieldName="SPECIALTY"/>
+      <columnsDatasource/>
+      <cellsDatasource/>
+      <cellDesignInfo>
+        <rowsKeyField/>
+        <columnsKeyField/>
+        <cellValueField/>
+      </cellDesignInfo>
+      <headerStyle>
+        <nativeFont name="Tahoma" size="11"/>
+      </headerStyle>
+    </column>
+    <constraints bottom="136px" left="12px" right="12px" top="60px" type="MarginConstraintsDesignInfo"/>
+  </widget>
+  <widget actionPerformed="SearchActionPerformed" name="Search" parent="Form" prefHeight="24px" prefWidth="96px" text="Поиск" toolTipText="&lt;нулевое значение&gt;" type="ButtonDesignInfo">
+    <easFont name="Tahoma" size="11" style="1"/>
+    <constraints bottom="40px" height="24px" left="468px" type="MarginConstraintsDesignInfo" width="96px"/>
+  </widget>
+  <widget foregroundColor="#000099" horizontalAlignment="0" name="label" parent="Form" prefHeight="36px" prefWidth="324px" text="Текущие услуги " type="LabelDesignInfo">
+    <easFont name="Tahoma" size="24" style="3"/>
+    <constraints bottom="352px" left="204px" right="263px" top="12px" type="MarginConstraintsDesignInfo"/>
+  </widget>
+  <widget name="label1" parent="Form" prefHeight="24px" prefWidth="216px" text=" Введите услугу для поиска" type="LabelDesignInfo">
+    <easFont name="Tahoma" size="14" style="1"/>
+    <constraints bottom="40px" height="24px" left="12px" type="MarginConstraintsDesignInfo" width="216px"/>
+  </widget>
+  <widget name="textField1" parent="Form" prefHeight="24px" prefWidth="216px" type="TextFieldDesignInfo">
+    <constraints bottom="40px" height="24px" left="228px" type="MarginConstraintsDesignInfo" width="216px"/>
+  </widget>
+  <nonvisual actionPerformed="textFieldActionPerformed" name="textField" prefHeight="0px" prefWidth="0px" type="TextFieldDesignInfo"/>
+  <layout type="MarginLayoutDesignInfo"/>
+</layout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><layout title="" view="view">
+  <AnchorsPane background="#ffffff" cursor="0" name="view" prefHeight="395px" prefWidth="829px"/>
+  <Label cursor="0" horizontalAlignment="0" horizontalTextPosition="0" name="label" parent="view" prefHeight="30px" prefWidth="240px" text="Список деталей">
+    <font family="Tahoma" size="14" style="1"/>
+    <AnchorsPaneConstraints height="30px" left="300px" top="20px" width="240px"/>
+  </Label>
+  <ModelGrid cursor="0" data="qDetails" name="modelGrid" parent="view" prefHeight="240px" prefWidth="540px">
+    <AnchorsPaneConstraints height="240px" left="130px" top="70px" width="540px"/>
+    <ServiceGridColumn name="colService"/>
+    <ModelGridColumn field="details_id" name="colDetails_id" title="ID" width="166px">
+      <ModelSpin max="1.7976931348623157E308" min="-1.7976931348623157E308"/>
+    </ModelGridColumn>
+    <ModelGridColumn field="designation" name="colDesignation" title="Наименование" width="167px">
+      <ModelFormattedField/>
+    </ModelGridColumn>
+    <ModelGridColumn field="price" name="colPrice" title="Стоимость" width="166px">
+      <ModelFormattedField/>
+    </ModelGridColumn>
+  </ModelGrid>
+  <Button cursor="0" name="btnAdd" parent="view" prefHeight="30px" prefWidth="100px" text="Добавить">
+    <AnchorsPaneConstraints bottom="35px" height="30px" left="130px" width="100px"/>
+  </Button>
+  <Button cursor="0" name="btnDelete" parent="view" prefHeight="30px" prefWidth="100px" text="Удалить">
+    <AnchorsPaneConstraints bottom="35px" height="30px" left="260px" width="100px"/>
+  </Button>
+  <Button cursor="0" name="btnSave" parent="view" prefHeight="30px" prefWidth="100px" text="Сохранить">
+    <AnchorsPaneConstraints bottom="35px" height="30px" right="159px" width="100px"/>
+  </Button>
+</layout>

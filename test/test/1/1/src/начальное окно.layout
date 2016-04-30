@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><layout defaultCloseOperation="2" name="Form" prefHeight="300px" prefWidth="652px">
+  <widget actionPerformed="CarsInformationActionPerformed" name="CarsInformation" parent="Form" prefHeight="35px" prefWidth="84px" text="Авто" type="ButtonDesignInfo">
+    <constraints bottom="25px" height="35px" left="204px" type="MarginConstraintsDesignInfo" width="84px"/>
+  </widget>
+  <widget actionPerformed="ClientsInformationActionPerformed" name="ClientsInformation" parent="Form" prefHeight="35px" prefWidth="84px" text="Клиенте" type="ButtonDesignInfo">
+    <constraints bottom="25px" height="35px" left="48px" type="MarginConstraintsDesignInfo" width="84px"/>
+  </widget>
+  <widget actionPerformed="WorkersInformationActionPerformed" name="WorkersInformation" parent="Form" prefHeight="35px" prefWidth="108px" text="Работнике" type="ButtonDesignInfo">
+    <constraints bottom="25px" height="35px" right="28px" type="MarginConstraintsDesignInfo" width="108px"/>
+  </widget>
+  <widget actionPerformed="ServiceInformationActionPerformed" name="ServiceInformation" parent="Form" prefHeight="35px" prefWidth="84px" text="Услуге" type="ButtonDesignInfo">
+    <constraints bottom="25px" height="35px" left="360px" type="MarginConstraintsDesignInfo" width="84px"/>
+  </widget>
+  <widget foregroundColor="#003399" horizontalAlignment="0" name="label1" parent="Form" prefHeight="48px" prefWidth="324px" text="Добро пожаловать!" type="LabelDesignInfo">
+    <constraints height="48px" left="168px" top="24px" type="MarginConstraintsDesignInfo" width="324px"/>
+    <easFont name="Times New Roman" size="36" style="1"/>
+  </widget>
+  <widget horizontalAlignment="0" name="label2" parent="Form" prefHeight="36px" prefWidth="600px" text="Выбор данных для редактирования и внесение информации о:" toolTipText="&lt;нулевое значение&gt;" type="LabelDesignInfo">
+    <constraints height="36px" left="36px" top="180px" type="MarginConstraintsDesignInfo" width="600px"/>
+    <easFont name="Calibri" size="14" style="3"/>
+  </widget>
+  <widget actionPerformed="buttonActionPerformed" name="button" parent="Form" prefHeight="35px" prefWidth="108px" text="просмотр" type="ButtonDesignInfo">
+    <constraints height="35px" left="276px" top="132px" type="MarginConstraintsDesignInfo" width="108px"/>
+  </widget>
+  <widget name="label" parent="Form" prefHeight="26px" prefWidth="240px" text="Просмотр и поиск текущих работ" type="LabelDesignInfo">
+    <constraints height="26px" left="216px" top="96px" type="MarginConstraintsDesignInfo" width="240px"/>
+    <easFont name="Calibri" size="14" style="3"/>
+  </widget>
+  <layout type="MarginLayoutDesignInfo"/>
+</layout>

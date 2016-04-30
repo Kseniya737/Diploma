@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><layout title="" view="view">
+  <AnchorsPane cursor="0" name="view" prefHeight="276px" prefWidth="557px"/>
+  <Label cursor="0" horizontalAlignment="0" name="label1" parent="view" prefHeight="48px" prefWidth="324px" text="Добро пожаловать!">
+    <font family="Tahoma" size="15" style="1"/>
+    <AnchorsPaneConstraints height="48px" left="120px" top="20px" width="324px"/>
+  </Label>
+  <Label cursor="0" horizontalAlignment="0" name="label2" parent="view" prefHeight="36px" prefWidth="270px" text="Внести данные об услуге" toolTipText="&lt;нулевое значение&gt;">
+    <font family="Tahoma" size="12" style="1"/>
+    <AnchorsPaneConstraints height="36px" left="140px" top="140px" width="270px"/>
+  </Label>
+  <Button cursor="0" name="btnView" parent="view" prefHeight="30px" prefWidth="110px" text="Просмотр">
+    <AnchorsPaneConstraints height="30px" left="220px" top="110px" width="110px"/>
+  </Button>
+  <Label cursor="0" horizontalAlignment="0" name="label" parent="view" prefHeight="36px" prefWidth="180px" text="Текущие работы">
+    <font family="Tahoma" size="12" style="1"/>
+    <AnchorsPaneConstraints height="36px" left="190px" top="70px" width="180px"/>
+  </Label>
+  <Button cursor="0" name="btnAddServ" parent="view" prefHeight="30px" prefWidth="110px" text="Добавить">
+    <AnchorsPaneConstraints height="30px" left="220px" top="180px" width="110px"/>
+  </Button>
+</layout>

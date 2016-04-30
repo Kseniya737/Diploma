@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?><layout title="" view="view">
+  <AnchorsPane background="#ffffff" cursor="0" name="view" prefHeight="671px" prefWidth="625px"/>
+  <Label cursor="0" horizontalAlignment="0" horizontalTextPosition="0" name="label" parent="view" prefHeight="40px" prefWidth="250px" text="Внести данные о работнике">
+    <font family="Tahoma" size="12" style="1"/>
+    <AnchorsPaneConstraints height="40px" left="190px" top="10px" width="250px"/>
+  </Label>
+  <Label cursor="0" horizontalAlignment="4" name="label1" parent="view" prefHeight="30px" prefWidth="100px" text="Фамилия">
+    <font family="Tahoma" size="11" style="1"/>
+    <AnchorsPaneConstraints height="30px" left="140px" top="80px" width="100px"/>
+  </Label>
+  <Label cursor="0" horizontalAlignment="4" name="label2" parent="view" prefHeight="30px" prefWidth="100px" text="Имя">
+    <font family="Tahoma" size="11" style="1"/>
+    <AnchorsPaneConstraints height="30px" left="140px" top="120px" width="100px"/>
+  </Label>
+  <Label cursor="0" horizontalAlignment="4" name="label3" parent="view" prefHeight="30px" prefWidth="100px" text="Отчество">
+    <font family="Tahoma" size="11" style="1"/>
+    <AnchorsPaneConstraints height="30px" left="140px" top="160px" width="100px"/>
+  </Label>
+  <Label cursor="0" horizontalAlignment="4" name="label4" parent="view" prefHeight="30px" prefWidth="100px" text="Специальность">
+    <font family="Tahoma" size="11" style="1"/>
+    <AnchorsPaneConstraints height="30px" left="140px" top="200px" width="100px"/>
+  </Label>
+  <Label cursor="0" horizontalAlignment="4" name="label5" parent="view" prefHeight="30px" prefWidth="100px" text="Стаж работы">
+    <font family="Tahoma" size="11" style="1"/>
+    <AnchorsPaneConstraints height="30px" left="140px" top="240px" width="100px"/>
+  </Label>
+  <Label cursor="0" horizontalAlignment="4" name="label6" parent="view" prefHeight="30px" prefWidth="100px" text="Разряд">
+    <font family="Tahoma" size="11" style="1"/>
+    <AnchorsPaneConstraints height="30px" left="140px" top="280px" width="100px"/>
+  </Label>
+  <ModelFormattedField cursor="0" data="qWorkers" field="cursor.w_lname" name="modelFormattedField" parent="view" prefHeight="30px" prefWidth="220px" text="modelFormattedField">
+    <AnchorsPaneConstraints height="30px" left="270px" top="80px" width="220px"/>
+  </ModelFormattedField>
+  <ModelFormattedField cursor="0" data="qWorkers" field="cursor.w_name" name="modelFormattedField1" parent="view" prefHeight="30px" prefWidth="220px" text="modelFormattedField">
+    <AnchorsPaneConstraints height="30px" left="270px" top="120px" width="220px"/>
+  </ModelFormattedField>
+  <ModelFormattedField cursor="0" data="qWorkers" field="cursor.w_mname" name="modelFormattedField2" parent="view" prefHeight="30px" prefWidth="220px" text="modelFormattedField">
+    <AnchorsPaneConstraints height="30px" left="270px" top="160px" width="220px"/>
+  </ModelFormattedField>
+  <ModelFormattedField cursor="0" data="qWorkers" field="cursor.specialty" name="modelFormattedField21" parent="view" prefHeight="30px" prefWidth="220px" text="modelFormattedField">
+    <AnchorsPaneConstraints height="30px" left="270px" top="200px" width="220px"/>
+  </ModelFormattedField>
+  <ModelFormattedField cursor="0" data="qWorkers" field="cursor.standing" name="modelFormattedField211" parent="view" prefHeight="30px" prefWidth="220px" text="modelFormattedField">
+    <AnchorsPaneConstraints height="30px" left="270px" top="240px" width="220px"/>
+  </ModelFormattedField>
+  <ModelFormattedField cursor="0" data="qWorkers" field="cursor.category" name="modelFormattedField212" parent="view" prefHeight="30px" prefWidth="220px" text="modelFormattedField">
+    <AnchorsPaneConstraints height="30px" left="270px" top="280px" width="220px"/>
+  </ModelFormattedField>
+  <Button cursor="0" name="btnSave" parent="view" prefHeight="30px" prefWidth="100px" text="Сохранить">
+    <AnchorsPaneConstraints height="30px" left="270px" top="330px" width="100px"/>
+  </Button>
+  <Button cursor="0" name="btnAdd" parent="view" prefHeight="30px" prefWidth="100px" text="Добавить">
+    <AnchorsPaneConstraints height="30px" left="270px" top="40px" width="100px"/>
+  </Button>
+  <ModelGrid cursor="0" data="qWorkers" name="modelGrid" parent="view" prefHeight="200px" prefWidth="570px">
+    <AnchorsPaneConstraints height="200px" left="20px" top="400px" width="570px"/>
+    <ServiceGridColumn name="colService"/>
+    <ModelGridColumn field="workers_id" name="colWorkers_id" title="colWorkers_id" width="75px">
+      <ModelSpin max="1.7976931348623157E308" min="-1.7976931348623157E308"/>
+    </ModelGridColumn>
+    <ModelGridColumn field="w_name" name="colW_name" title="colW_name" width="75px">
+      <ModelFormattedField/>
+    </ModelGridColumn>
+    <ModelGridColumn field="w_mname" name="colW_mname" title="colW_mname" width="75px">
+      <ModelFormattedField/>
+    </ModelGridColumn>
+    <ModelGridColumn field="w_lname" name="colW_lname" title="colW_lname" width="75px">
+      <ModelFormattedField/>
+    </ModelGridColumn>
+    <ModelGridColumn field="specialty" name="colSpecialty" title="colSpecialty" width="75px">
+      <ModelFormattedField/>
+    </ModelGridColumn>
+    <ModelGridColumn field="standing" name="colStanding" title="colStanding" width="75px">
+      <ModelFormattedField/>
+    </ModelGridColumn>
+    <ModelGridColumn field="category" name="colCategory" title="colCategory" width="75px">
+      <ModelFormattedField/>
+    </ModelGridColumn>
+    <ModelGridColumn field="fullName" name="colFullName" title="&lt;нулевое значение&gt;" width="75px">
+      <ModelFormattedField/>
+    </ModelGridColumn>
+  </ModelGrid>
+</layout>

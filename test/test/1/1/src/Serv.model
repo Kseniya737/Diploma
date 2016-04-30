@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><datamodel>
+  <parametersEntity entityHeight="200" entityIconified="false" entityLocationX="12" entityLocationY="12" entityWidth="150"/>
+  <entity Name="qClients" Title="qClients" entityHeight="200" entityIconified="false" entityId="138682599152221" entityLocationX="700" entityLocationY="28" entityWidth="150" queryId="qClients" tableName="" tableSchemaName=""/>
+  <entity Name="qAllService" Title="qAllService" entityHeight="200" entityIconified="false" entityId="138676268423250" entityLocationX="219" entityLocationY="14" entityWidth="150" queryId="qAllService" tableName="" tableSchemaName=""/>
+  <entity Name="CARS" Title="CARS" entityHeight="121" entityIconified="false" entityId="138676269276931" entityLocationX="475" entityLocationY="12" entityWidth="150" tableName="CARS" tableSchemaName=""/>
+  <entity Name="qWorkers" Title="qWorkers" entityHeight="200" entityIconified="false" entityId="138682586651808" entityLocationX="476" entityLocationY="173" entityWidth="150" queryId="qWorkers" tableName="" tableSchemaName=""/>
+  <referenceRelation leftEntityFieldName="CLIENTS_ID" leftEntityId="138676268423250" rightEntityFieldName="CLIENTS_ID" rightEntityId="138682599152221"/>
+  <referenceRelation leftEntityFieldName="WORKERS_ID" leftEntityId="138676268423250" rightEntityFieldName="WORKERS_ID" rightEntityId="138682586651808"/>
+  <referenceRelation leftEntityFieldName="CARS_ID" leftEntityId="138676268423250" rightEntityFieldName="CARS_ID" rightEntityId="138676269276931"/>
+  <referenceRelation leftEntityFieldName="OWNER_ID" leftEntityId="138676269276931" rightEntityFieldName="CLIENTS_ID" rightEntityId="138682599152221"/>
+</datamodel>

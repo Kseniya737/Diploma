@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><datamodel>
+  <entity Name="qWorkers" Title="" entityHeight="190" entityIconified="false" entityId="145632650247475" entityLocationX="263" entityLocationY="197" entityWidth="162" queryId="qWorkers" tableName="" tableSchemaName=""/>
+  <entity Name="qClients" Title="" entityHeight="172" entityIconified="false" entityId="145632651485761" entityLocationX="580" entityLocationY="12" entityWidth="150" queryId="qClients" tableName="" tableSchemaName=""/>
+  <entity Name="qAllService" Title="" entityHeight="200" entityIconified="false" entityId="145632645593344" entityLocationX="10" entityLocationY="13" entityWidth="150" queryId="qAllService" tableName="" tableSchemaName=""/>
+  <entity Name="qServiceType" Title="" entityHeight="71" entityIconified="false" entityId="145632660600079" entityLocationX="525" entityLocationY="218" entityWidth="150" queryId="qServiceType" tableName="" tableSchemaName=""/>
+  <entity Name="qCars" Title="" entityHeight="146" entityIconified="false" entityId="145813223348337" entityLocationX="265" entityLocationY="14" entityWidth="150" queryId="qCars" tableName="" tableSchemaName=""/>
+  <entity Name="qBills" Title="" entityHeight="132" entityIconified="false" entityId="145950352925008" entityLocationX="34" entityLocationY="253" entityWidth="150" queryId="qBills" tableName="" tableSchemaName=""/>
+  <referenceRelation collectionPropertyName="CservType" leftEntityFieldName="servicetype" leftEntityId="145632645593344" rightEntityFieldName="servicetype_id" rightEntityId="145632660600079" scalarPropertyName="LservType"/>
+  <referenceRelation leftEntityFieldName="bill" leftEntityId="145632645593344" rightEntityFieldName="bills_id" rightEntityId="145950352925008"/>
+  <referenceRelation collectionPropertyName="Cnumr" leftEntityFieldName="cars_id" leftEntityId="145632645593344" rightEntityFieldName="cars_id" rightEntityId="145813223348337" scalarPropertyName="Lnumr"/>
+  <referenceRelation collectionPropertyName="Cworker" leftEntityFieldName="workers_id" leftEntityId="145632645593344" rightEntityFieldName="workers_id" rightEntityId="145632650247475" scalarPropertyName="Lworker"/>
+  <referenceRelation leftEntityFieldName="client" leftEntityId="145950352925008" rightEntityFieldName="clients_id" rightEntityId="145632651485761"/>
+  <referenceRelation collectionPropertyName="Cclient" leftEntityFieldName="clients_id" leftEntityId="145632645593344" rightEntityFieldName="clients_id" rightEntityId="145632651485761" scalarPropertyName="Lclient"/>
+  <referenceRelation leftEntityFieldName="owner_id" leftEntityId="145813223348337" rightEntityFieldName="clients_id" rightEntityId="145632651485761"/>
+</datamodel>

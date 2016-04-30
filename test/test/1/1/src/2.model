@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?><datamodel>
+  <parametersEntity entityHeight="200" entityIconified="false" entityLocationX="1" entityLocationY="3" entityWidth="150"/>
+  <entity Name="SERVICE" Title="SERVICE" entityHeight="200" entityIconified="false" entityId="138416582302008" entityLocationX="158" entityLocationY="6" entityWidth="150" tableName="SERVICE" tableSchemaName=""/>
+</datamodel>

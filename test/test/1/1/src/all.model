@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><datamodel>
+  <parametersEntity entityHeight="200" entityIconified="false" entityLocationX="8" entityLocationY="7" entityWidth="150"/>
+  <entity Title="SERVICE" entityHeight="200" entityIconified="false" entityId="138487128836789" entityLocationX="509" entityLocationY="10" entityWidth="150" tableAlias="" tableName="SERVICE" tableSchemaName=""/>
+  <entity Title="WORKERS" entityHeight="200" entityIconified="false" entityId="138487152600299" entityLocationX="346" entityLocationY="11" entityWidth="150" tableAlias="" tableName="WORKERS" tableSchemaName=""/>
+  <entity Title="CLIENTS" entityHeight="200" entityIconified="false" entityId="138487128307848" entityLocationX="675" entityLocationY="6" entityWidth="150" tableAlias="" tableName="CLIENTS" tableSchemaName=""/>
+  <entity Title="CARS" entityHeight="200" entityIconified="false" entityId="138487127992700" entityLocationX="178" entityLocationY="10" entityWidth="150" tableAlias="" tableName="CARS" tableSchemaName=""/>
+  <relation leftEntityFieldName="CARS_ID" leftEntityId="138487128836789" rightEntityFieldName="CARS_ID" rightEntityId="138487127992700"/>
+  <relation leftEntityFieldName="WORKERS_ID" leftEntityId="138487128836789" rightEntityFieldName="WORKERS_ID" rightEntityId="138487152600299"/>
+  <relation leftEntityFieldName="CLIENTS_ID" leftEntityId="138487128836789" rightEntityFieldName="CLIENTS_ID" rightEntityId="138487128307848"/>
+</datamodel>

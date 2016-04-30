@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><datamodel>
+  <parameters>
+    <parameter description="" name="Name" nullable="true" parameterMode="1" selectionForm="null" type="String"/>
+  </parameters>
+  <parametersEntity entityHeight="200" entityIconified="false" entityLocationX="8" entityLocationY="7" entityWidth="150"/>
+  <entity Title="" entityHeight="73" entityIconified="false" entityId="145604449422695" entityLocationX="457" entityLocationY="12" entityWidth="150" tableAlias="t3" tableName="COLOR" tableSchemaName=""/>
+  <entity Title="" entityHeight="78" entityIconified="false" entityId="145604428312748" entityLocationX="428" entityLocationY="94" entityWidth="150" tableAlias="t" tableName="CAR" tableSchemaName=""/>
+  <entity Title="CARS" entityHeight="200" entityIconified="false" entityId="138613204491628" entityLocationX="215" entityLocationY="7" entityWidth="150" tableAlias="t1" tableName="CARS" tableSchemaName=""/>
+  <entity Title="" entityHeight="135" entityIconified="false" entityId="145604428314360" entityLocationX="605" entityLocationY="125" entityWidth="150" tableAlias="t2" tableName="CLIENTS" tableSchemaName=""/>
+  <relation leftEntityFieldName="car" leftEntityId="138613204491628" rightEntityId="-1" rightEntityParameterName="Name"/>
+</datamodel>

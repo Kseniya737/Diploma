@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><layout title="" view="view">
+  <AnchorsPane cursor="0" name="view" prefHeight="415px" prefWidth="980px"/>
+  <Button cursor="0" name="btnClient" parent="view" prefHeight="30px" prefWidth="110px" text="Добавить">
+    <AnchorsPaneConstraints bottom="25px" height="30px" left="30px" width="110px"/>
+  </Button>
+  <Button cursor="0" name="DeleteClient" parent="view" prefHeight="30px" prefWidth="110px" text="Удалить">
+    <AnchorsPaneConstraints bottom="25px" height="30px" left="160px" width="110px"/>
+  </Button>
+  <TextField cursor="0" name="textField" parent="view" prefHeight="30px" prefWidth="220px">
+    <AnchorsPaneConstraints height="30px" left="360px" top="60px" width="220px"/>
+  </TextField>
+  <Button cursor="0" name="Search" parent="view" prefHeight="30px" prefWidth="83px" text="Поиск" toolTipText="&lt;нулевое значение&gt;">
+    <AnchorsPaneConstraints height="30px" left="600px" top="60px" width="83px"/>
+  </Button>
+  <Button cursor="0" name="Save" parent="view" prefHeight="30px" prefWidth="130px" text="Сохранить" toolTipText="&lt;нулевое значение&gt;">
+    <AnchorsPaneConstraints bottom="25px" height="30px" right="40px" width="130px"/>
+  </Button>
+  <Label cursor="0" horizontalAlignment="0" name="label" parent="view" prefHeight="38px" prefWidth="468px" text="Данные о клиентах">
+    <font family="Tahoma" size="14" style="1"/>
+    <AnchorsPaneConstraints height="38px" left="260px" top="10px" width="468px"/>
+  </Label>
+  <ModelGrid cursor="0" data="qClients" name="modelGrid" parent="view" prefHeight="230px" prefWidth="920px" rowsHeight="20">
+    <AnchorsPaneConstraints height="230px" left="30px" top="110px" width="920px"/>
+    <ServiceGridColumn name="colService" resizable="true"/>
+    <ModelGridColumn field="clients_id" name="colClients_id" title="colClients_id" visible="false" width="126px">
+      <ModelSpin max="1.7976931348623157E308" min="-1.7976931348623157E308"/>
+    </ModelGridColumn>
+    <ModelGridColumn field="c_name" name="Имя" title="Имя" width="126px">
+      <ModelFormattedField format=""/>
+    </ModelGridColumn>
+    <ModelGridColumn field="c_mname" name="colC_mname" title="Отчество" width="125px">
+      <ModelFormattedField format=""/>
+    </ModelGridColumn>
+    <ModelGridColumn field="c_lname" name="colC_lname" title="Фамилия" width="126px">
+      <ModelFormattedField format=""/>
+    </ModelGridColumn>
+    <ModelGridColumn field="phone_number" name="colPhone_number" title="Телефон" width="125px">
+      <ModelFormattedField format=""/>
+    </ModelGridColumn>
+    <ModelGridColumn field="address" name="colAddress" title="Адрес" width="126px">
+      <ModelFormattedField format=""/>
+    </ModelGridColumn>
+    <ModelGridColumn field="fullName" name="colFullName" title="colFullName" visible="false" width="125px">
+      <ModelFormattedField format=""/>
+    </ModelGridColumn>
+  </ModelGrid>
+  <Button cursor="0" name="btnOK" parent="view" prefHeight="30px" prefWidth="130px" text="Выбрать">
+    <AnchorsPaneConstraints bottom="25px" height="30px" right="190px" width="130px"/>
+  </Button>
+</layout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><datamodel>
+  <entity Name="qClients" Title="" entityHeight="200" entityIconified="false" entityId="146114250400476" entityLocationX="436" entityLocationY="8" entityWidth="150" queryId="qClients" tableName="" tableSchemaName=""/>
+  <entity Name="temp" Title="" entityHeight="200" entityIconified="false" entityId="146114092987532" entityLocationX="17" entityLocationY="11" entityWidth="150" queryId="temp" tableName="" tableSchemaName=""/>
+  <entity Name="qServiceType" Title="" entityHeight="200" entityIconified="false" entityId="146114180934796" entityLocationX="238" entityLocationY="10" entityWidth="150" queryId="qServiceType" tableName="" tableSchemaName=""/>
+  <entity Name="qCars" Title="" entityHeight="167" entityIconified="false" entityId="146114285218276" entityLocationX="297" entityLocationY="215" entityWidth="150" queryId="qCars" tableName="" tableSchemaName=""/>
+  <entity Name="qWorkers" Title="" entityHeight="200" entityIconified="false" entityId="146114251424656" entityLocationX="614" entityLocationY="97" entityWidth="150" queryId="qWorkers" tableName="" tableSchemaName=""/>
+  <referenceRelation collectionPropertyName="cNum" leftEntityFieldName="cars_id" leftEntityId="146114092987532" rightEntityFieldName="cars_id" rightEntityId="146114285218276" scalarPropertyName="lNum"/>
+  <referenceRelation collectionPropertyName="cClient" leftEntityFieldName="clients_id" leftEntityId="146114092987532" rightEntityFieldName="clients_id" rightEntityId="146114250400476" scalarPropertyName="lClient"/>
+  <referenceRelation collectionPropertyName="cType" leftEntityFieldName="servicetype" leftEntityId="146114092987532" rightEntityFieldName="servicetype_id" rightEntityId="146114180934796" scalarPropertyName="lType"/>
+  <referenceRelation collectionPropertyName="cWorker" leftEntityFieldName="workers_id" leftEntityId="146114092987532" rightEntityFieldName="workers_id" rightEntityId="146114251424656" scalarPropertyName="lWorker"/>
+  <referenceRelation leftEntityFieldName="owner_id" leftEntityId="146114285218276" rightEntityFieldName="clients_id" rightEntityId="146114250400476"/>
+</datamodel>

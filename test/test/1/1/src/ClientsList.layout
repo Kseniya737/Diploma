@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?><layout defaultCloseOperation="2" name="Form" prefHeight="460px" prefWidth="878px" windowOpened="formWindowOpened">
+  <widget actionPerformed="AddClientActionPerformed" name="AddClient" parent="Form" prefHeight="23px" prefWidth="96px" text="Добавить" type="ButtonDesignInfo">
+    <constraints bottom="137px" height="23px" left="24px" type="MarginConstraintsDesignInfo" width="96px"/>
+  </widget>
+  <widget actionPerformed="DeleteClientActionPerformed" name="DeleteClient" parent="Form" prefHeight="23px" prefWidth="96px" text="Удалить" type="ButtonDesignInfo">
+    <constraints bottom="137px" height="23px" left="156px" type="MarginConstraintsDesignInfo" width="96px"/>
+  </widget>
+  <widget actionPerformed="textFieldActionPerformed" name="textField" parent="Form" prefHeight="36px" prefWidth="144px" type="TextFieldDesignInfo">
+    <constraints bottom="124px" height="36px" right="127px" type="MarginConstraintsDesignInfo" width="144px"/>
+  </widget>
+  <widget actionPerformed="SearchActionPerformed" name="Search" parent="Form" prefHeight="35px" prefWidth="83px" text="Поиск" toolTipText="&lt;нулевое значение&gt;" type="ButtonDesignInfo">
+    <constraints bottom="125px" height="35px" right="32px" type="MarginConstraintsDesignInfo" width="83px"/>
+  </widget>
+  <widget actionPerformed="SaveActionPerformed" name="Save" parent="Form" prefHeight="48px" prefWidth="144px" text="Сохранить" toolTipText="&lt;нулевое значение&gt;" type="ButtonDesignInfo">
+    <easFont name="Tahoma" size="14" style="1"/>
+    <constraints bottom="40px" height="48px" right="31px" type="MarginConstraintsDesignInfo" width="144px"/>
+  </widget>
+  <widget name="modelGrid" parent="Form" prefHeight="179px" prefWidth="823px" type="DbGridDesignInfo">
+    <treeDesignInfo/>
+    <rowsColumnsDesignInfo>
+      <rowsDatasource entityId="138615832232872" field="false"/>
+    </rowsColumnsDesignInfo>
+    <column name="Фамилия">
+      <controlInfo classHint="DbLabelDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
+      <columnsDisplayField/>
+      <datamodelElement entityId="138615832232872" fieldName="C_LNAME"/>
+      <columnsDatasource/>
+      <cellsDatasource/>
+      <cellDesignInfo>
+        <rowsKeyField/>
+        <columnsKeyField/>
+        <cellValueField/>
+      </cellDesignInfo>
+      <headerStyle>
+        <nativeFont name="Tahoma" size="11"/>
+      </headerStyle>
+    </column>
+    <column name="Имя">
+      <controlInfo classHint="DbLabelDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
+      <columnsDisplayField/>
+      <datamodelElement entityId="138615832232872" fieldName="C_NAME"/>
+      <columnsDatasource/>
+      <cellsDatasource/>
+      <cellDesignInfo>
+        <rowsKeyField/>
+        <columnsKeyField/>
+        <cellValueField/>
+      </cellDesignInfo>
+      <headerStyle>
+        <nativeFont name="Tahoma" size="11"/>
+      </headerStyle>
+    </column>
+    <column name="Отчество">
+      <controlInfo classHint="DbLabelDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
+      <columnsDisplayField/>
+      <datamodelElement entityId="138615832232872" fieldName="C_MNAME"/>
+      <columnsDatasource/>
+      <cellsDatasource/>
+      <cellDesignInfo>
+        <rowsKeyField/>
+        <columnsKeyField/>
+        <cellValueField/>
+      </cellDesignInfo>
+      <headerStyle>
+        <nativeFont name="Tahoma" size="11"/>
+      </headerStyle>
+    </column>
+    <column name="Номер телефона">
+      <controlInfo classHint="DbLabelDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
+      <columnsDisplayField/>
+      <datamodelElement entityId="138615832232872" fieldName="PHONE_NUMBER"/>
+      <columnsDatasource/>
+      <cellsDatasource/>
+      <cellDesignInfo>
+        <rowsKeyField/>
+        <columnsKeyField/>
+        <cellValueField/>
+      </cellDesignInfo>
+      <headerStyle>
+        <nativeFont name="Tahoma" size="11"/>
+      </headerStyle>
+    </column>
+    <column name="Адрес">
+      <controlInfo classHint="DbLabelDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
+      <columnsDisplayField/>
+      <datamodelElement entityId="138615832232872" fieldName="ADDRESS"/>
+      <columnsDatasource/>
+      <cellsDatasource/>
+      <cellDesignInfo>
+        <rowsKeyField/>
+        <columnsKeyField/>
+        <cellValueField/>
+      </cellDesignInfo>
+      <headerStyle>
+        <nativeFont name="Tahoma" size="11"/>
+      </headerStyle>
+    </column>
+    <constraints bottom="209px" left="24px" right="31px" top="72px" type="MarginConstraintsDesignInfo"/>
+  </widget>
+  <widget foregroundColor="#003399" horizontalAlignment="0" name="label" parent="Form" prefHeight="38px" prefWidth="468px" text="Данные о клиентах" type="LabelDesignInfo">
+    <easFont name="Tahoma" size="24" style="3"/>
+    <constraints height="38px" left="204px" top="12px" type="MarginConstraintsDesignInfo" width="468px"/>
+  </widget>
+  <layout type="MarginLayoutDesignInfo"/>
+</layout>

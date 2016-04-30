@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><datamodel>
+  <parameters>
+    <parameter description="" name="Defect" nullable="true" parameterMode="1" selectionForm="null" type="String"/>
+    <parameter description="" name="num" nullable="true" parameterMode="1" selectionForm="null" type="String"/>
+  </parameters>
+  <parametersEntity entityHeight="200" entityIconified="false" entityLocationX="8" entityLocationY="7" entityWidth="150"/>
+  <entity Title="SERVICE" entityHeight="200" entityIconified="false" entityId="138616092034623" entityLocationX="206" entityLocationY="8" entityWidth="150" tableAlias="t1" tableName="SERVICE" tableSchemaName=""/>
+  <entity Title="WORKERS" entityHeight="200" entityIconified="false" entityId="138673786205340" entityLocationX="438" entityLocationY="11" entityWidth="150" tableAlias="t" tableName="WORKERS" tableSchemaName=""/>
+  <relation leftEntityFieldName="cars_id" leftEntityId="138616092034623" rightEntityId="-1" rightEntityParameterName="num"/>
+  <relation leftEntityFieldName="servicetype" leftEntityId="138616092034623" rightEntityId="-1" rightEntityParameterName="Defect"/>
+  <relation leftEntityFieldName="workers_id" leftEntityId="138616092034623" rightEntityFieldName="workers_id" rightEntityId="138673786205340"/>
+</datamodel>

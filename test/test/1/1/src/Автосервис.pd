@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><datamodel datamodelDbId="null">
+  <fieldsEntity entityHeight="169" entityIconified="false" entityId="138313034709972" entityLocationX="208" entityLocationY="7" entityWidth="160" tableName="Service"/>
+  <fieldsEntity entityHeight="159" entityIconified="false" entityId="138313036419976" entityLocationX="15" entityLocationY="9" entityWidth="150" tableName="Workers"/>
+  <fieldsEntity entityHeight="77" entityIconified="false" entityId="138667447986336" entityLocationX="645" entityLocationY="9" entityWidth="150" tableName="Car"/>
+  <fieldsEntity entityHeight="73" entityIconified="false" entityId="138562889145259" entityLocationX="644" entityLocationY="97" entityWidth="150" tableName="Color"/>
+  <fieldsEntity entityHeight="142" entityIconified="false" entityId="138313038044740" entityLocationX="425" entityLocationY="207" entityWidth="160" tableName="Clients"/>
+  <fieldsEntity entityHeight="156" entityIconified="false" entityId="138313025125179" entityLocationX="433" entityLocationY="31" entityWidth="141" tableName="Cars"/>
+</datamodel>

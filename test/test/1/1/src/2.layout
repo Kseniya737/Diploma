@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?><layout defaultCloseOperation="2" name="Form" prefHeight="402px" prefWidth="815px">
+  <widget actionPerformed="textFieldActionPerformed" cursor="2" horizontalAlignment="0" name="textField" parent="Form" prefHeight="32px" prefWidth="120px" type="TextFieldDesignInfo">
+    <constraints height="32px" right="11px" top="264px" type="MarginConstraintsDesignInfo" width="120px"/>
+  </widget>
+  <widget name="Search" parent="Form" prefHeight="35px" prefWidth="77px" text="Поиск" type="ButtonDesignInfo">
+    <constraints height="35px" right="150px" top="264px" type="MarginConstraintsDesignInfo" width="77px"/>
+  </widget>
+  <widget name="AddClient" parent="Form" prefHeight="23px" prefWidth="144px" text="Добавить клиента" type="ButtonDesignInfo">
+    <constraints height="23px" left="36px" top="264px" type="MarginConstraintsDesignInfo" width="144px"/>
+  </widget>
+  <widget actionPerformed="DeleteClientActionPerformed" name="DeleteClient" parent="Form" prefHeight="23px" prefWidth="144px" text="Удалить клиента" type="ButtonDesignInfo">
+    <constraints height="23px" left="216px" top="264px" type="MarginConstraintsDesignInfo" width="144px"/>
+  </widget>
+  <widget actionPerformed="SaveActionPerformed" backgroundColor="#99ff99" name="Save" parent="Form" prefHeight="48px" prefWidth="180px" text="Сохранить данные" type="ButtonDesignInfo">
+    <constraints height="48px" right="35px" top="324px" type="MarginConstraintsDesignInfo" width="180px"/>
+  </widget>
+  <widget name="modelGrid" parent="Form" prefHeight="204px" prefWidth="768px" type="DbGridDesignInfo">
+    <rowsColumnsDesignInfo>
+      <rowsDatasource entityId="138416582302008" field="false"/>
+    </rowsColumnsDesignInfo>
+    <column name="sERVICE_ID">
+      <controlInfo classHint="DbSpinDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
+      <columnsDisplayField/>
+      <datamodelElement entityId="138416582302008" fieldName="SERVICE_ID"/>
+      <columnsDatasource/>
+      <cellsDatasource/>
+      <cellDesignInfo>
+        <rowsKeyField/>
+        <columnsKeyField/>
+        <cellValueField/>
+      </cellDesignInfo>
+      <headerStyle>
+        <nativeFont name="Tahoma" size="11"/>
+      </headerStyle>
+    </column>
+    <column name="dEFECT">
+      <controlInfo classHint="DbLabelDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
+      <columnsDisplayField/>
+      <datamodelElement entityId="138416582302008" fieldName="DEFECT"/>
+      <columnsDatasource/>
+      <cellsDatasource/>
+      <cellDesignInfo>
+        <rowsKeyField/>
+        <columnsKeyField/>
+        <cellValueField/>
+      </cellDesignInfo>
+      <headerStyle>
+        <nativeFont name="Tahoma" size="11"/>
+      </headerStyle>
+    </column>
+    <column name="cOST">
+      <controlInfo classHint="DbLabelDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
+      <columnsDisplayField/>
+      <datamodelElement entityId="138416582302008" fieldName="COST"/>
+      <columnsDatasource/>
+      <cellsDatasource/>
+      <cellDesignInfo>
+        <rowsKeyField/>
+        <columnsKeyField/>
+        <cellValueField/>
+      </cellDesignInfo>
+      <headerStyle>
+        <nativeFont name="Tahoma" size="11"/>
+      </headerStyle>
+    </column>
+    <column name="cARS_ID">
+      <controlInfo classHint="DbLabelDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
+      <columnsDisplayField/>
+      <datamodelElement entityId="138416582302008" fieldName="CARS_ID"/>
+      <columnsDatasource/>
+      <cellsDatasource/>
+      <cellDesignInfo>
+        <rowsKeyField/>
+        <columnsKeyField/>
+        <cellValueField/>
+      </cellDesignInfo>
+      <headerStyle>
+        <nativeFont name="Tahoma" size="11"/>
+      </headerStyle>
+    </column>
+    <column name="cLIENTS_ID">
+      <controlInfo classHint="DbSpinDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
+      <columnsDisplayField/>
+      <datamodelElement entityId="138416582302008" fieldName="CLIENTS_ID"/>
+      <columnsDatasource/>
+      <cellsDatasource/>
+      <cellDesignInfo>
+        <rowsKeyField/>
+        <columnsKeyField/>
+        <cellValueField/>
+      </cellDesignInfo>
+      <headerStyle>
+        <nativeFont name="Tahoma" size="11"/>
+      </headerStyle>
+    </column>
+    <column name="wORKERS_ID">
+      <controlInfo classHint="DbSpinDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
+      <columnsDisplayField/>
+      <datamodelElement entityId="138416582302008" fieldName="WORKERS_ID"/>
+      <columnsDatasource/>
+      <cellsDatasource/>
+      <cellDesignInfo>
+        <rowsKeyField/>
+        <columnsKeyField/>
+        <cellValueField/>
+      </cellDesignInfo>
+      <headerStyle>
+        <nativeFont name="Tahoma" size="11"/>
+      </headerStyle>
+    </column>
+    <column name="eNTRY_DATE">
+      <controlInfo classHint="DbLabelDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
+      <columnsDisplayField/>
+      <datamodelElement entityId="138416582302008" fieldName="ENTRY_DATE"/>
+      <columnsDatasource/>
+      <cellsDatasource/>
+      <cellDesignInfo>
+        <rowsKeyField/>
+        <columnsKeyField/>
+        <cellValueField/>
+      </cellDesignInfo>
+      <headerStyle>
+        <nativeFont name="Tahoma" size="11"/>
+      </headerStyle>
+    </column>
+    <column name="cOMPLETION_DATE">
+      <controlInfo classHint="DbLabelDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
+      <columnsDisplayField/>
+      <datamodelElement entityId="138416582302008" fieldName="COMPLETION_DATE"/>
+      <columnsDatasource/>
+      <cellsDatasource/>
+      <cellDesignInfo>
+        <rowsKeyField/>
+        <columnsKeyField/>
+        <cellValueField/>
+      </cellDesignInfo>
+      <headerStyle>
+        <nativeFont name="Tahoma" size="11"/>
+      </headerStyle>
+    </column>
+    <treeDesignInfo/>
+    <constraints height="204px" left="24px" top="24px" type="MarginConstraintsDesignInfo" width="768px"/>
+  </widget>
+  <layout type="MarginLayoutDesignInfo"/>
+</layout>
