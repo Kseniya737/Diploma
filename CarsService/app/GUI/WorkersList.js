@@ -3,7 +3,7 @@
  * @author ксюша
  * @module WorkersList
  */
-define(['orm', 'forms', 'ui', 'AddNewWorker'],
+define(['orm', 'forms', 'ui', './AddNewWorker'],
          function (Orm, Forms, Ui, AddNewWorker, ModuleName) {
             function module_constructor() {
                 var self = this

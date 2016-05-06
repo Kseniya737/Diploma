@@ -3,7 +3,7 @@
  * @author Kseniya
  * @module NewCar
  */
-define(['orm', 'forms', 'CarsCatalog', 'ColorsCatalog', 'ui'], 
+define(['orm', 'forms', './CarsCatalog', './ColorsCatalog', 'ui'], 
 function (Orm, Forms, CarsCatalog, ColorsCatalog, Ui, ModuleName) {
     function module_constructor() {
         var self = this

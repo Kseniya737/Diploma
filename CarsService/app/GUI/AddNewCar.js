@@ -1,9 +1,8 @@
 /**
  * 
  * @author Kseniya
- * @module AddNewCar
  */
-define(['orm', 'forms', 'ui', 'NewCar'], function (Orm, Forms, Ui, NewCar, ModuleName) {
+define(['orm', 'forms', 'ui', './NewCar'], function (Orm, Forms, Ui, NewCar, ModuleName) {
     function module_constructor() {
         var self = this
                 , model = Orm.loadModel(ModuleName)

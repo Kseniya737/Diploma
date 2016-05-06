@@ -1,7 +1,6 @@
 /**
  * 
  * @author Kseniya
- * @module ColorsCatalog
  */
 define(['orm', 'forms', 'ui'], function (Orm, Forms, Ui, ModuleName) {
     function module_constructor() {

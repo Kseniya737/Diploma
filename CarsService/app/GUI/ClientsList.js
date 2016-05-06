@@ -4,7 +4,7 @@
  * @module ClientsList
  */
 
-define(['orm', 'forms', 'ui', 'AddNewClient'], 
+define(['orm', 'forms', 'ui', './AddNewClient'], 
 function (Orm, Forms, Ui, AddNewClient, ModuleName) {
     function module_constructor() {
         var self = this

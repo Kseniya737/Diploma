@@ -1,9 +1,8 @@
 /**
  * 
  * @author Kseniya
- * @module AddService
  */
-define(['orm', 'forms', 'ui', 'WorkersList', 'ClientsList', 'AddNewCar', 'ServicesCatalog', 'rpc'],
+define(['orm', 'forms', 'ui', './WorkersList', './ClientsList', './AddNewCar', './ServicesCatalog', 'rpc'],
         function (Orm, Forms, Ui, WorkersList, ClientsList, AddNewCar, ServicesCatalog, Rpc, ModuleName) {
             function module_constructor() {
                 var self = this
