@@ -46,6 +46,7 @@ define(['orm', 'forms', 'ui'], function (Orm, Forms, Ui, ModuleName) {
         
         form.btnSelect.onActionPerformed = function(event) {
             AddModel(form.modelGrid.selected[0]);
+            model.save();
             form.close();// TODO Добавьте здесь свой код
         };
         

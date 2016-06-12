@@ -29,13 +29,13 @@ define(['orm', 'forms', 'ui', './NewCar'], function (Orm, Forms, Ui, NewCar, Mod
             }      
         }; 
         
-         function AddCar(car){   
+         function AddCar(model){   
               model.requery();
           }
         form.btnAdd.onActionPerformed = function (event) {
            // model.qCars.push({});  //Добавляем новую строку
             var addCar = new NewCar();
-            addCar.showModal(AddCar);
+            addCar.showModal(AddCar);  
         };
         
          form.btnSave.onActionPerformed = function (event) {

@@ -4,7 +4,7 @@
  */
 require(['environment', 'logger'], function (F, Logger) {
     var global = this;
-    F.cacheBust(true);
+    //F.cacheBust(true);
     //F.export(global);
     require('GUI/начальное окно', function(начальное_окно){
         var m = new начальное_окно();

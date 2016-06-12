@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><layout title="" view="view">
   <AnchorsPane background="#ffffff" cursor="0" name="view" prefHeight="562px" prefWidth="649px"/>
   <Label cursor="0" horizontalAlignment="0" name="label" parent="view" prefHeight="30px" prefWidth="310px" text="Внести данные об автомобиле">
-    <font family="Tahoma" size="11" style="1"/>
+    <font family="Arial" size="11" style="1"/>
     <AnchorsPaneConstraints height="30px" left="170px" top="20px" width="310px"/>
   </Label>
   <Label cursor="0" horizontalAlignment="4" name="label1" parent="view" prefHeight="30px" prefWidth="100px" text="Гос. номер">
@@ -68,7 +68,7 @@
   <Button cursor="0" name="btnModel" parent="view" prefHeight="30px" prefWidth="100px" text="Выбрать">
     <AnchorsPaneConstraints height="30px" right="89px" top="160px" width="100px"/>
   </Button>
-  <Button cursor="0" name="btnColore" parent="view" prefHeight="30px" prefWidth="100px" text="Выбрать">
+  <Button cursor="0" name="btnColor" parent="view" prefHeight="30px" prefWidth="100px" text="Выбрать">
     <AnchorsPaneConstraints height="30px" right="89px" top="210px" width="100px"/>
   </Button>
 </layout>

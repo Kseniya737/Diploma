@@ -9,6 +9,8 @@ define(['orm', 'forms', 'ui', './WorkersList', './ClientsList', './AddNewCar', '
                         , model = Orm.loadModel(ModuleName)
                         , form = Forms.loadForm(ModuleName, model);
 
+                
+                
                 self.show = function () {
 
                     form.show();
@@ -27,6 +29,7 @@ define(['orm', 'forms', 'ui', './WorkersList', './ClientsList', './AddNewCar', '
 
                 model.requery(function () {
                     model.qAllService.push({});
+                    form.modelFormattedField.value = null;
                 });
 
                 function callback(master) {
@@ -71,10 +74,11 @@ define(['orm', 'forms', 'ui', './WorkersList', './ClientsList', './AddNewCar', '
                 };
 
                 form.btnReport.onActionPerformed = function (event) {
-                    var reportProxy = new Rpc.Proxy('reports/TstReport');
-                    reportProxy.execute(function (report) {
-                        report.show();
-                    });
+                    console.log(form);
+                    //  var reportProxy = new Rpc.Proxy('reports/TstReport');
+                    //  reportProxy.execute(function (report) {
+                    //      report.show();
+                    //  });
                 };
 
                 form.modelGrid.onItemSelected = function (event) {

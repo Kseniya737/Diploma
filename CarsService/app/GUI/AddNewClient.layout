@@ -1,70 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?><layout title="" view="view">
   <AnchorsPane background="#ffffff" cursor="0" name="view" prefHeight="605px" prefWidth="698px"/>
   <Label cursor="0" horizontalAlignment="0" name="label" parent="view" prefHeight="30px" prefWidth="220px" text="Внести данные о клиенте">
-    <font family="Tahoma" size="12" style="1"/>
+    <font family="Arial" size="12" style="1"/>
     <AnchorsPaneConstraints height="30px" left="230px" top="20px" width="220px"/>
   </Label>
   <Button cursor="0" name="btnAdd" parent="view" prefHeight="30px" prefWidth="100px" text="Добавить">
     <AnchorsPaneConstraints height="30px" left="290px" top="60px" width="100px"/>
   </Button>
-  <ModelFormattedField cursor="0" data="qClients" field="cursor.address" name="modelFormattedField" parent="view" prefHeight="30px" prefWidth="190px" text="modelFormattedField">
+  <ModelFormattedField cursor="0" data="qClients" field="cursor.address" format="" name="modelFormattedField" parent="view" prefHeight="30px" prefWidth="190px" text="modelFormattedField">
     <AnchorsPaneConstraints height="30px" left="300px" top="270px" width="190px"/>
   </ModelFormattedField>
-  <ModelFormattedField cursor="0" data="qClients" field="cursor.c_name" name="modelFormattedField1" parent="view" prefHeight="30px" prefWidth="190px" text="modelFormattedField">
+  <ModelFormattedField cursor="0" data="qClients" field="cursor.c_name" format="" name="modelFormattedField1" parent="view" prefHeight="30px" prefWidth="190px" text="modelFormattedField">
     <AnchorsPaneConstraints height="30px" left="300px" top="150px" width="190px"/>
   </ModelFormattedField>
-  <ModelFormattedField cursor="0" data="qClients" field="cursor.phone_number" name="modelFormattedField2" parent="view" prefHeight="30px" prefWidth="190px" text="modelFormattedField">
+  <ModelFormattedField cursor="0" data="qClients" field="cursor.phone_number" format="" name="modelFormattedField2" parent="view" prefHeight="30px" prefWidth="190px" text="modelFormattedField">
     <AnchorsPaneConstraints height="30px" left="300px" top="230px" width="190px"/>
   </ModelFormattedField>
-  <ModelFormattedField cursor="0" data="qClients" field="cursor.c_lname" name="modelFormattedField3" parent="view" prefHeight="30px" prefWidth="190px" text="modelFormattedField">
+  <ModelFormattedField cursor="0" data="qClients" field="cursor.c_lname" format="" name="modelFormattedField3" parent="view" prefHeight="30px" prefWidth="190px" text="modelFormattedField">
     <AnchorsPaneConstraints height="30px" left="300px" top="110px" width="190px"/>
   </ModelFormattedField>
   <Label cursor="0" horizontalAlignment="4" name="label1" parent="view" prefHeight="30px" prefWidth="100px" text="Фамилия">
-    <font family="Tahoma" size="12" style="1"/>
+    <font family="Arial" size="12" style="1"/>
     <AnchorsPaneConstraints height="30px" left="160px" top="110px" width="100px"/>
   </Label>
   <Label cursor="0" horizontalAlignment="4" name="label2" parent="view" prefHeight="30px" prefWidth="100px" text="Имя">
-    <font family="Tahoma" size="12" style="1"/>
+    <font family="Arial" size="12" style="1"/>
     <AnchorsPaneConstraints height="30px" left="160px" top="150px" width="100px"/>
   </Label>
   <Label cursor="0" horizontalAlignment="4" name="label3" parent="view" prefHeight="30px" prefWidth="100px" text="Отчество">
-    <font family="Tahoma" size="12" style="1"/>
+    <font family="Arial" size="12" style="1"/>
     <AnchorsPaneConstraints height="30px" left="160px" top="190px" width="100px"/>
   </Label>
   <Label cursor="0" horizontalAlignment="4" name="label4" parent="view" prefHeight="30px" prefWidth="100px" text="Телефон">
-    <font family="Tahoma" size="12" style="1"/>
+    <font family="Arial" size="12" style="1"/>
     <AnchorsPaneConstraints height="30px" left="160px" top="230px" width="100px"/>
   </Label>
-  <ModelFormattedField cursor="0" data="qClients" field="cursor.c_mname" name="modelFormattedField4" parent="view" prefHeight="30px" prefWidth="190px" text="modelFormattedField">
+  <ModelFormattedField cursor="0" data="qClients" field="cursor.c_mname" format="" name="modelFormattedField4" parent="view" prefHeight="30px" prefWidth="190px" text="modelFormattedField">
     <AnchorsPaneConstraints height="30px" left="300px" top="190px" width="190px"/>
   </ModelFormattedField>
   <Label cursor="0" horizontalAlignment="4" name="label5" parent="view" prefHeight="30px" prefWidth="100px" text="Адрес">
-    <font family="Tahoma" size="12" style="1"/>
+    <font family="Arial" size="12" style="1"/>
     <AnchorsPaneConstraints height="30px" left="160px" top="270px" width="100px"/>
   </Label>
   <ModelGrid cursor="0" data="qClients" name="modelGrid" parent="view" prefHeight="180px" prefWidth="640px">
     <AnchorsPaneConstraints bottom="5px" height="180px" left="20px" width="640px"/>
-    <ServiceGridColumn name="colService"/>
-    <ModelGridColumn field="clients_id" name="colClients_id" title="colClients_id" width="86px">
+    <ServiceGridColumn name="colService" resizable="true"/>
+    <ModelGridColumn field="clients_id" name="colClients_id" title="colClients_id" visible="false" width="86px">
       <ModelSpin max="1.7976931348623157E308" min="-1.7976931348623157E308"/>
     </ModelGridColumn>
-    <ModelGridColumn field="c_name" name="colC_name" title="colC_name" width="86px">
-      <ModelFormattedField/>
+    <ModelGridColumn field="c_name" name="colC_name" title="Имя" width="86px">
+      <ModelFormattedField format=""/>
     </ModelGridColumn>
-    <ModelGridColumn field="c_mname" name="colC_mname" title="colC_mname" width="85px">
-      <ModelFormattedField/>
+    <ModelGridColumn field="c_mname" name="colC_mname" title="Отчество" width="85px">
+      <ModelFormattedField format=""/>
     </ModelGridColumn>
-    <ModelGridColumn field="c_lname" name="colC_lname" title="colC_lname" width="86px">
-      <ModelFormattedField/>
+    <ModelGridColumn field="c_lname" name="colC_lname" title="Фамилия" width="86px">
+      <ModelFormattedField format=""/>
     </ModelGridColumn>
-    <ModelGridColumn field="phone_number" name="colPhone_number" title="colPhone_number" width="85px">
-      <ModelFormattedField/>
+    <ModelGridColumn field="phone_number" name="colPhone_number" title="Телефон" width="85px">
+      <ModelFormattedField format=""/>
     </ModelGridColumn>
-    <ModelGridColumn field="address" name="colAddress" title="colAddress" width="86px">
-      <ModelFormattedField/>
+    <ModelGridColumn field="address" name="colAddress" title="Адрес" width="86px">
+      <ModelFormattedField format=""/>
     </ModelGridColumn>
-    <ModelGridColumn field="fullName" name="colFullName" title="colFullName" width="85px">
-      <ModelFormattedField/>
+    <ModelGridColumn field="fullName" name="colFullName" title="colFullName" visible="false" width="85px">
+      <ModelFormattedField format=""/>
     </ModelGridColumn>
   </ModelGrid>
   <Button cursor="0" name="btnSave" parent="view" prefHeight="30px" prefWidth="100px" text="Сохранить">

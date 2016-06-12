@@ -3,7 +3,7 @@
  * @author ксюша
  */
 
-define(['orm', 'forms', 'ui', './AddService', './tmp'], function (Orm, Forms, Ui, AddService, tmp, ModuleName) {
+define(['orm', 'forms', 'ui',  './AddService', './tmp'], function (Orm, Forms, Ui, AddService, tmp, ModuleName) {
     function module_constructor() {
         var self = this
                 , model = Orm.loadModel(ModuleName)
