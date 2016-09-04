@@ -1,50 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?><layout title="" view="view">
-  <AnchorsPane cursor="0" name="view" prefHeight="415px" prefWidth="980px"/>
-  <Button cursor="0" name="btnClient" parent="view" prefHeight="30px" prefWidth="110px" text="Добавить">
-    <AnchorsPaneConstraints bottom="25px" height="30px" left="30px" width="110px"/>
-  </Button>
-  <Button cursor="0" name="DeleteClient" parent="view" prefHeight="30px" prefWidth="110px" text="Удалить">
-    <AnchorsPaneConstraints bottom="25px" height="30px" left="160px" width="110px"/>
-  </Button>
-  <TextField cursor="0" name="textField" parent="view" prefHeight="30px" prefWidth="220px">
-    <AnchorsPaneConstraints height="30px" left="360px" top="60px" width="220px"/>
-  </TextField>
-  <Button cursor="0" name="Search" parent="view" prefHeight="30px" prefWidth="83px" text="Поиск" toolTipText="&lt;нулевое значение&gt;">
-    <AnchorsPaneConstraints height="30px" left="600px" top="60px" width="83px"/>
-  </Button>
-  <Button cursor="0" name="Save" parent="view" prefHeight="30px" prefWidth="130px" text="Сохранить" toolTipText="&lt;нулевое значение&gt;">
-    <AnchorsPaneConstraints bottom="25px" height="30px" right="40px" width="130px"/>
-  </Button>
-  <Label cursor="0" horizontalAlignment="0" name="label" parent="view" prefHeight="38px" prefWidth="468px" text="Данные о клиентах">
-    <font family="Tahoma" size="14" style="1"/>
-    <AnchorsPaneConstraints height="38px" left="260px" top="10px" width="468px"/>
-  </Label>
-  <ModelGrid cursor="0" data="qClients" name="modelGrid" parent="view" prefHeight="230px" prefWidth="920px" rowsHeight="20">
-    <AnchorsPaneConstraints height="230px" left="30px" top="110px" width="920px"/>
+  <AnchorsPane cursor="0" name="view" prefHeight="393px" prefWidth="956px"/>
+  <ModelGrid cursor="0" data="qClients" name="modelGrid" parent="view" prefHeight="260px" prefWidth="950px" rowsHeight="20">
+    <AnchorsPaneConstraints height="260px" left="10px" top="60px" width="950px"/>
     <ServiceGridColumn name="colService" resizable="true"/>
-    <ModelGridColumn field="clients_id" name="colClients_id" title="colClients_id" visible="false" width="126px">
-      <ModelSpin max="1.7976931348623157E308" min="-1.7976931348623157E308"/>
-    </ModelGridColumn>
-    <ModelGridColumn field="c_name" name="Имя" title="Имя" width="126px">
+    <ModelGridColumn editor="com.eas.client.forms.components.model.ModelFormattedField[,0,0,0x0,invalid,layout=java.awt.BorderLayout,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@1eea7df0,flags=16777225,maximumSize=,minimumSize=,preferredSize=]" field="c_name" name="Имя" title="Имя" view="com.eas.client.forms.components.model.ModelFormattedField[,-151,-19,0x0,invalid,layout=java.awt.BorderLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777225,maximumSize=,minimumSize=,preferredSize=]" width="152px">
       <ModelFormattedField format=""/>
     </ModelGridColumn>
-    <ModelGridColumn field="c_mname" name="colC_mname" title="Отчество" width="125px">
+    <ModelGridColumn editor="com.eas.client.forms.components.model.ModelFormattedField[,0,0,0x0,invalid,layout=java.awt.BorderLayout,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@37341f3b,flags=16777225,maximumSize=,minimumSize=,preferredSize=]" field="c_mname" name="colC_mname" title="Отчество" view="com.eas.client.forms.components.model.ModelFormattedField[,-150,-19,0x0,invalid,layout=java.awt.BorderLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777225,maximumSize=,minimumSize=,preferredSize=]" width="151px">
       <ModelFormattedField format=""/>
     </ModelGridColumn>
-    <ModelGridColumn field="c_lname" name="colC_lname" title="Фамилия" width="126px">
+    <ModelGridColumn editor="com.eas.client.forms.components.model.ModelFormattedField[,0,0,0x0,invalid,layout=java.awt.BorderLayout,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@18673525,flags=16777225,maximumSize=,minimumSize=,preferredSize=]" field="c_lname" name="colC_lname" title="Фамилия" view="com.eas.client.forms.components.model.ModelFormattedField[,-151,-19,0x0,invalid,layout=java.awt.BorderLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777225,maximumSize=,minimumSize=,preferredSize=]" width="152px">
       <ModelFormattedField format=""/>
     </ModelGridColumn>
-    <ModelGridColumn field="phone_number" name="colPhone_number" title="Телефон" width="125px">
+    <ModelGridColumn editor="com.eas.client.forms.components.model.ModelFormattedField[,0,0,0x0,invalid,layout=java.awt.BorderLayout,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@e3a8ba9,flags=16777225,maximumSize=,minimumSize=,preferredSize=]" field="phone_number" name="colPhone_number" title="Телефон" view="com.eas.client.forms.components.model.ModelFormattedField[,-150,-19,0x0,invalid,layout=java.awt.BorderLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777225,maximumSize=,minimumSize=,preferredSize=]" width="151px">
       <ModelFormattedField format=""/>
     </ModelGridColumn>
-    <ModelGridColumn field="address" name="colAddress" title="Адрес" width="126px">
+    <ModelGridColumn editor="com.eas.client.forms.components.model.ModelFormattedField[,0,0,0x0,invalid,layout=java.awt.BorderLayout,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@1295b99a,flags=16777225,maximumSize=,minimumSize=,preferredSize=]" field="address" name="colAddress" title="Адрес" view="com.eas.client.forms.components.model.ModelFormattedField[,-151,-19,0x0,invalid,layout=java.awt.BorderLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777225,maximumSize=,minimumSize=,preferredSize=]" width="152px">
       <ModelFormattedField format=""/>
     </ModelGridColumn>
-    <ModelGridColumn field="fullName" name="colFullName" title="colFullName" visible="false" width="125px">
+    <ModelGridColumn editor="com.eas.client.forms.components.model.ModelFormattedField[,0,0,0x0,invalid,layout=java.awt.BorderLayout,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@54fb134,flags=16777225,maximumSize=,minimumSize=,preferredSize=]" field="fullName" name="colFullName" title="colFullName" view="com.eas.client.forms.components.model.ModelFormattedField[,-150,-19,0x0,invalid,layout=java.awt.BorderLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777225,maximumSize=,minimumSize=,preferredSize=]" visible="false" width="151px">
       <ModelFormattedField format=""/>
     </ModelGridColumn>
   </ModelGrid>
-  <Button cursor="0" name="btnOK" parent="view" prefHeight="30px" prefWidth="130px" text="Выбрать">
-    <AnchorsPaneConstraints bottom="25px" height="30px" right="190px" width="130px"/>
+  <TextField cursor="0" name="filterInput" parent="view" prefHeight="40px" prefWidth="200px">
+    <AnchorsPaneConstraints height="40px" right="20px" top="10px" width="200px"/>
+  </TextField>
+  <Button cursor="0" icon="icons/22x22/actions/window-close.png" name="btnCancel" parent="view" prefHeight="30px" prefWidth="130px" text="Отмена">
+    <font family="Arial" size="11" style="1"/>
+    <AnchorsPaneConstraints height="30px" right="20px" top="350px" width="130px"/>
   </Button>
+  <Button cursor="0" icon="icons/22x22/actions/dialog-apply.png" name="btnSelect" parent="view" prefHeight="30px" prefWidth="130px" text="Выбрать">
+    <font family="Arial" size="11" style="1"/>
+    <AnchorsPaneConstraints height="30px" right="160px" top="350px" width="130px"/>
+  </Button>
+  <Label cursor="0" horizontalAlignment="4" name="label1" opaque="true" parent="view" prefHeight="40px" prefWidth="60px" text="Поиск">
+    <font family="Arial" size="11" style="1"/>
+    <AnchorsPaneConstraints height="40px" right="230px" top="10px" width="60px"/>
+  </Label>
+  <ToolBar cursor="0" name="toolBar" parent="view" prefHeight="40px" prefWidth="270px">
+    <AnchorsPaneConstraints height="40px" left="20px" top="10px" width="270px"/>
+  </ToolBar>
+  <Button cursor="0" focusable="false" horizontalTextPosition="0" icon="icons/22x22/actions/list-add.png" name="btnAdd" parent="toolBar" prefHeight="40px" prefWidth="50px" toolTipText="Добавить работника" verticalTextPosition="3"/>
+  <Button cursor="0" focusable="false" horizontalTextPosition="0" icon="icons/22x22/actions/list-remove.png" name="btnRemove" parent="toolBar" prefHeight="40px" prefWidth="50px" toolTipText="Удалить работника" verticalTextPosition="3"/>
+  <Button cursor="0" focusable="false" horizontalTextPosition="0" icon="icons/22x22/actions/document-edit.png" name="btnEdit" parent="toolBar" prefHeight="40px" prefWidth="50px" toolTipText="Изменить" verticalTextPosition="3"/>
+  <Button cursor="0" focusable="false" horizontalTextPosition="0" icon="icons/22x22/actions/document-save.png" name="btnSave" opaque="false" parent="toolBar" prefHeight="40px" prefWidth="50px" toolTipText="Сохранить" verticalTextPosition="3"/>
+  <Button cursor="0" icon="icons/22x22/actions/old-view-refresh.png" name="btnRefresh" parent="toolBar" prefHeight="40px" prefWidth="50px" toolTipText="Обновить"/>
 </layout>

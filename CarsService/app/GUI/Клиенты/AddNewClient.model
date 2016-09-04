@@ -1,3 +1,3 @@
 <?xml version="1.0" encoding="UTF-8"?><datamodel>
-  <entity Name="qClients" Title="" entityHeight="200" entityIconified="false" entityId="146010615643357" entityLocationX="29" entityLocationY="11" entityWidth="150" queryId="qClients" tableName="" tableSchemaName=""/>
+  <entity Name="qClientByID" Title="" entityHeight="200" entityIconified="false" entityId="147299131436000" entityLocationX="25" entityLocationY="12" entityWidth="150" queryId="qClientByID" tableName="" tableSchemaName=""/>
 </datamodel>
