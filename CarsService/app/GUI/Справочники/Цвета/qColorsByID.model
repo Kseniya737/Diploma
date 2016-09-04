@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><datamodel>
+  <parameters>
+    <parameter description="" name="id" nullable="true" parameterMode="1" selectionForm="null" type="Number"/>
+  </parameters>
+  <parametersEntity entityHeight="200" entityIconified="false" entityLocationX="8" entityLocationY="7" entityWidth="150"/>
+  <entity Title="" entityHeight="200" entityIconified="false" entityId="147299879873000" entityLocationX="176" entityLocationY="9" entityWidth="150" tableAlias="t1" tableName="COLOR" tableSchemaName=""/>
+  <relation leftEntityId="-1" leftEntityParameterName="id" rightEntityFieldName="color_id" rightEntityId="147299879873000"/>
+</datamodel>

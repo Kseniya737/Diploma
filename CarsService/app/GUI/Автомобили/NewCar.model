@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?><datamodel>
   <entity Name="qCar" Title="" entityHeight="96" entityIconified="false" entityId="145951875407723" entityLocationX="266" entityLocationY="12" entityWidth="150" queryId="qCar" tableName="" tableSchemaName=""/>
+  <entity Name="qCarsByID" Title="" entityHeight="200" entityIconified="false" entityId="147299619311900" entityLocationX="27" entityLocationY="20" entityWidth="150" queryId="qCarsByID" tableName="" tableSchemaName=""/>
   <entity Name="qColors" Title="" entityHeight="65" entityIconified="false" entityId="145951867492711" entityLocationX="267" entityLocationY="119" entityWidth="150" queryId="qColors" tableName="" tableSchemaName=""/>
-  <entity Name="qCars" Title="" entityHeight="200" entityIconified="false" entityId="145951865807276" entityLocationX="39" entityLocationY="52" entityWidth="150" queryId="qCars" tableName="" tableSchemaName=""/>
   <entity Name="qClients" Title="" entityHeight="174" entityIconified="false" entityId="145951882234713" entityLocationX="433" entityLocationY="144" entityWidth="150" queryId="qClients" tableName="" tableSchemaName=""/>
-  <referenceRelation collectionPropertyName="cColor" leftEntityFieldName="color" leftEntityId="145951865807276" rightEntityFieldName="color_id" rightEntityId="145951867492711" scalarPropertyName="lColor"/>
-  <referenceRelation collectionPropertyName="cCar" leftEntityFieldName="car" leftEntityId="145951865807276" rightEntityFieldName="car_id" rightEntityId="145951875407723" scalarPropertyName="lCar"/>
-  <referenceRelation leftEntityFieldName="owner_id" leftEntityId="145951865807276" polyline="195;156 218;156 218;197 427;197" rightEntityFieldName="clients_id" rightEntityId="145951882234713"/>
+  <referenceRelation leftEntityFieldName="color" leftEntityId="147299619311900" rightEntityFieldName="color_id" rightEntityId="145951867492711" scalarPropertyName="refColor"/>
+  <referenceRelation leftEntityFieldName="owner_id" leftEntityId="147299619311900" rightEntityFieldName="clients_id" rightEntityId="145951882234713" scalarPropertyName="refClient"/>
+  <referenceRelation leftEntityFieldName="car" leftEntityId="147299619311900" rightEntityFieldName="car_id" rightEntityId="145951875407723" scalarPropertyName="refModel"/>
 </datamodel>

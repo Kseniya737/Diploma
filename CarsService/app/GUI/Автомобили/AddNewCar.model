@@ -3,7 +3,7 @@
   <entity Name="qCar" Title="" entityHeight="92" entityIconified="false" entityId="145649087795187" entityLocationX="394" entityLocationY="10" entityWidth="150" queryId="qCar" tableName="" tableSchemaName=""/>
   <entity Name="qCars" Title="" entityHeight="170" entityIconified="false" entityId="145632889822209" entityLocationX="28" entityLocationY="23" entityWidth="150" queryId="qCars" tableName="" tableSchemaName=""/>
   <entity Name="qClients" Title="" entityHeight="165" entityIconified="false" entityId="145845860378444" entityLocationX="396" entityLocationY="183" entityWidth="150" queryId="qClients" tableName="" tableSchemaName=""/>
-  <referenceRelation collectionPropertyName="cCar" leftEntityFieldName="car" leftEntityId="145632889822209" rightEntityFieldName="car_id" rightEntityId="145649087795187" scalarPropertyName="Lcar"/>
-  <referenceRelation collectionPropertyName="Cclients" leftEntityFieldName="owner_id" leftEntityId="145632889822209" rightEntityFieldName="clients_id" rightEntityId="145845860378444" scalarPropertyName="Lclients"/>
   <referenceRelation collectionPropertyName="cColors" leftEntityFieldName="color" leftEntityId="145632889822209" rightEntityFieldName="color_id" rightEntityId="145632892442902" scalarPropertyName="Lcolor"/>
+  <referenceRelation leftEntityFieldName="owner_id" leftEntityId="145632889822209" rightEntityFieldName="clients_id" rightEntityId="145845860378444" scalarPropertyName="Lclients"/>
+  <referenceRelation collectionPropertyName="cCar" leftEntityFieldName="car" leftEntityId="145632889822209" rightEntityFieldName="car_id" rightEntityId="145649087795187" scalarPropertyName="Lcar"/>
 </datamodel>

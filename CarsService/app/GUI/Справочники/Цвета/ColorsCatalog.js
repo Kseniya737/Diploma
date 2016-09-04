@@ -1,8 +1,8 @@
 /**
- * 
+ * @module ColorsCatalog
  * @author Kseniya
  */
-define(['orm', 'forms', 'ui'], function (Orm, Forms, Ui, ModuleName) {
+define('ColorsCatalog', ['orm', 'forms', 'ui'], function (Orm, Forms, Ui, ModuleName) {
     function module_constructor() {
         var self = this
                 , model = Orm.loadModel(ModuleName)
@@ -12,50 +12,82 @@ define(['orm', 'forms', 'ui'], function (Orm, Forms, Ui, ModuleName) {
             form.show();
         };
         
-        var AddColore;
-        self.showModal = function (anAddColore) {
-            AddColore = anAddColore;
-            form.showModal();
+        form.btnRefresh.onActionPerformed = function(){
+            model.requery();
         };
         
-    //    function AddColore(coloreCar){   
-    //        model.requery();
-    //    } 
-        
-        // TODO : place your code here
-        
-        model.requery(function () {
-            // TODO : place your code here
-        });
-        
-        form.btnAdd.onActionPerformed = function (event) {
-            model.qColors.push({});  //Добавляем новую строку
+        form.btnAdd.onActionPerformed = function () {
+            require('./ColorsEditor', function(ColorsEditor) {
+                var editor = new ColorsEditor();
+                editor.showModal(function() {
+                    model.requery();
+                });
+            },function() {
+                //Failure procedure
+            });
         };
         
-        form.btnDelete.onActionPerformed = function (event) {
-            if (confirm("Удалить?")) {
-                for (var i in form.modelGrid.selected) {
-                    model.qColors.splice(model.qColors.indexOf(form.modelGrid.selected[i]), 1);  //Удаляем лишнее
-                }
+        form.btnSelect.onActionPerformed = function () {
+           form.close(model.qColors.cursor); 
+        };
+        
+        form.btnRemove.onActionPerformed = function() {
+            if (form.modelGrid.selected[0]) {
+                model.qColors.remove(form.modelGrid.selected);
+            } else {
+                model.qColors.remove(model.qColors.cursor);
+            }
+            var filterKey = form.filterInput.text;
+            filter(filterKey);
+        };
+
+
+        form.btnEdit.onActionPerformed = function () {
+            if (model.qColors.cursor) {
+                require('./ColorsEditor', function (ColorsEditor) {
+                    var editor = new ColorsEditor(form.modelGrid.selected[0].color_id);
+                    editor.showModal(function () {
+                        model.requery(function(){
+                            var filterKey = form.filterInput.text;
+                            filter(filterKey);
+                        });
+                    });
+                }, function () {
+                    //Failure procedure
+                });
             }
         };
         
-        form.btnSave.onActionPerformed = function (event) {
+        form.btnSave.onActionPerformed = function () {
             model.save();
         };
         
-        form.btnSearch.onActionPerformed = function (event) {
-            var searchText = "%" + form.textField.text + "%";
-            model.qColors.params.Color = searchText;
-            model.qColors.requery();
+        form.btnClose.onActionPerformed = function() { 
+           if (model.modified) {
+                        model.save();
+                        form.close();
+                    }else{
+                        form.close();
+                    };
         };
         
-        form.btnSelect.onActionPerformed = function(event) {
-            AddColore(form.modelGrid.selected[0]);
-            model.save();
-            form.close();// TODO Добавьте здесь свой код
+        form.filterInput.onValueChange = form.filterInput.onKeyReleased = function () {
+            var filterKey = form.filterInput.text;
+            filter(filterKey);
         };
+
+        function filter(aKey) {
+            if (aKey) {
+                var filtered = model.qColors.filter(function (aType) {
+                    return aType.color.toLowerCase().indexOf(aKey.toLowerCase()) !== -1;
+                });
+                form.modelGrid.data = filtered;
+            } else {
+                form.modelGrid.data = model.qColors;
+            }
+        }
         
+        model.requery();
     }
     return module_constructor;
 });

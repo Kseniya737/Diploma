@@ -3,7 +3,7 @@
  * @author Kseniya
  * @module CarsCatalog
  */
-define(['orm', 'forms', 'ui'], function (Orm, Forms, Ui, ModuleName) {
+define('CarsCatalog', ['orm', 'forms', 'ui'], function (Orm, Forms, Ui, ModuleName) {
     function module_constructor() {
         var self = this
                 , model = Orm.loadModel(ModuleName)

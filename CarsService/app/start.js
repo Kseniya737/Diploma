@@ -6,15 +6,15 @@ require(['environment', 'logger'], function (F, Logger) {
     var global = this;
     F.cacheBust(true);
     //F.export(global);
-    require('GUI/Клиенты/ClientsList', function(ClientsList){
-        var m = new ClientsList();
+    require('ColorsCatalog', function(ColorsCatalog){
+        var m = new ColorsCatalog();
         m.show();
     }, function(e){
         Logger.severe(e);
         if(global.document){
             var messageParagraph = global.document.createElement('p');
             global.document.body.appendChild(messageParagraph);
-            messageParagraph.innerHTML = 'An error occured while require(\'GUI/Клиенты/ClientsList\'). Error: ' + e;
+            messageParagraph.innerHTML = 'An error occured while require(\'ColorsCatalog\'). Error: ' + e;
             messageParagraph.style.margin = '10px';
             messageParagraph.style.fontFamily = 'Arial';
             messageParagraph.style.fontSize = '14pt';

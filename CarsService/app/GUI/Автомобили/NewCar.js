@@ -3,9 +3,9 @@
  * @author Kseniya
  * @module NewCar
  */
-define(['orm', 'forms', './CarsCatalog', './ColorsCatalog', 'ui'],
-        function (Orm, Forms, CarsCatalog, ColorsCatalog, Ui, ModuleName) {
-            function module_constructor() {
+define(['orm', 'forms', 'ui'],
+        function (Orm, Forms, Ui, ModuleName) {
+            function module_constructor(carID) {
                 var self = this
                         , model = Orm.loadModel(ModuleName)
                         , form = Forms.loadForm(ModuleName, model);
@@ -14,48 +14,42 @@ define(['orm', 'forms', './CarsCatalog', './ColorsCatalog', 'ui'],
                     form.show();
                 };
 
-                var AddCar;
-                self.showModal = function (anAddCar) {
-                    AddCar = anAddCar;
-                    form.showModal();
-                };
-
-                form.btnAdd.onActionPerformed = function (event) {
-                    model.qCars.push({});  //Добавляем новую строку
-                };
-                form.btnSave.onActionPerformed = function (event) {
-                    model.save();
-                    //Сохраняем изменения
-                };
-
-
-                form.onWindowClosing = function (event) {
-                    AddCar();
-                };
-
-                function AddModel(modelCar) {
-                    form.modelCombo.value = modelCar;
-                    // model.requery();
+                if (carID) {
+                    model.qCarsByID.params.id = carID;
+                       model.requery(function() {
+                       form.mcModel.redraw();
+                       form.mcColor.redraw();
+                   });
+                } else {
+                    model.qCarsByID.push({});
                 }
 
-                form.btnModel.onActionPerformed = function (event) {
-                    var addModel = new CarsCatalog();
-                    addModel.showModal(AddModel);
+                form.btnAccept.onActionPerformed = function(){
+                     model.save(function() {
+                        form.close(null);
+                    });
                 };
-
-                function AddColore(colorCar) {
-                    form.modelCombo1.value = colorCar;
-                }
-
-                form.btnColor.onActionPerformed = function (){
-                    var addColore = new ColorsCatalog();
-                    addColore.showModal(AddColore);
+                form.btnCancel.onActionPerformed = function(){
+                    form.close();
                 };
-
-                model.requery(function () {
-                    model.qCars.push({});// TODO : place your code here
-                });
-
+                
+                form.mcModel.onSelect = function () {
+                    require('./CarsCatalog', function (CarsCatalog) {
+                        var picker = new NewCar();
+                        picker.showModal(function (addNew) {
+                            form.mcModel.value = addNew;
+                        });
+                    });
+                };
+                
+                form.mcColor.onSelect = function () {
+                    require('./ColorsCatalog', function (color) {
+                        var picker = new color();
+                        picker.showModal(function (addNew) {
+                            form.mcColor.value = addNew;
+                        });
+                    });
+                };
             }
             return module_constructor;
         });
