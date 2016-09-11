@@ -22,11 +22,18 @@ define('CarsCatalog', ['orm', 'forms', 'ui'], function (Orm, Forms, Ui, ModuleNa
 //        function AddModel(modelCar){   
 //            model.requery();
 //        } 
-      
-        form.btnSave.onActionPerformed = function (event) {
-            model.save();  //Сохраняем изменения
-        };
 
+        
+        form.btnSelect.onActionPerformed = function(event) {
+            AddModel(form.modelGrid.selected[0]);
+            model.save();
+            form.close();
+        };
+        
+        form.btnRefresh.onActionPerformed = function(){
+            model.requery();
+        };
+        
         form.btnAdd.onActionPerformed = function () {
             require('CarsCatalogEditor', function(CarsCatalogEditor) {
                 var editor = new CarsCatalogEditor();
@@ -38,30 +45,68 @@ define('CarsCatalog', ['orm', 'forms', 'ui'], function (Orm, Forms, Ui, ModuleNa
             });
         };
         
-        form.BtnDelete.onActionPerformed = function (event) {
+        form.btnRemove.onActionPerformed = function() {
             if (confirm("Удалить?")) {
-                for (var i in form.modelGrid.selected) {
-                    model.qCar.splice(model.qCar.indexOf(form.modelGrid.selected[i]), 1);  //Удаляем лишнее
+                if (form.modelGrid.selected[0]) {
+                    model.qCar.remove(form.modelGrid.selected);
+                } else {
+                    model.qCar.remove(model.qCar.cursor);
                 }
+                var filterKey = form.filterInput.text;
+                filter(filterKey);
+            };
+        };
+        
+        form.btnEdit.onActionPerformed = function () {
+            if (model.qCar.cursor) {
+                require('CarsCatalogEditor', function (CarsCatalogEditor) {
+                    var editor = new CarsCatalogEditor(form.modelGrid.selected[0].car_id);
+                    editor.show(function () {
+                        model.requery(function(){
+                            var filterKey = form.filterInput.text;
+                            filter(filterKey);
+                        });
+                    });
+                }, function () {
+                    //Failure procedure
+                });
             }
         };
         
-        form.btnSearch.onActionPerformed = function (event) {
-            var searchText = "%" + form.textField.text + "%";
-            model.qCar.params.Model = searchText;
-            model.qCar.requery();
+        form.btnSave.onActionPerformed = function () {
+            model.save();
+        };        
+        
+        form.btnClose.onActionPerformed = function() { 
+           if (model.modified) {
+                        model.save();
+                        form.close();
+                    }else{
+                        form.close();
+                    };
         };
         
-        form.btnSelect.onActionPerformed = function(event) {
-            AddModel(form.modelGrid.selected[0]);
-            model.save();
-            form.close();
+        form.filterInput.onValueChange = form.filterInput.onKeyReleased = function () {
+            var filterKey = form.filterInput.text;
+            filter(filterKey);
         };
+
+        function filter(aKey) {
+            if (aKey) {
+                var filtered = model.qCar.filter(function (aType) {
+                    return aType.car.toLowerCase().indexOf(aKey.toLowerCase()) !== -1;
+                });
+                form.modelGrid.data = filtered;
+            } else {
+                form.modelGrid.data = model.qCar;
+            }        
         
           model.requery(function () {
             // TODO : place your code here
         });
+    }
         
+        model.requery();
     }
     return module_constructor;
 });

@@ -1,8 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?><datamodel>
-  <parameters>
-    <parameter description="" name="Model" nullable="true" parameterMode="1" selectionForm="null" type="String"/>
-  </parameters>
   <parametersEntity entityHeight="200" entityIconified="false" entityLocationX="8" entityLocationY="7" entityWidth="150"/>
   <entity Title="" entityHeight="200" entityIconified="false" entityId="140092976256396" entityLocationX="221" entityLocationY="6" entityWidth="150" tableAlias="t1" tableName="CAR" tableSchemaName=""/>
-  <relation leftEntityFieldName="car" leftEntityId="140092976256396" rightEntityId="-1" rightEntityParameterName="Model"/>
 </datamodel>
