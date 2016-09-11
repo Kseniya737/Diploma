@@ -12,14 +12,20 @@ define('ColorsCatalog', ['orm', 'forms', 'ui'], function (Orm, Forms, Ui, Module
             form.show();
         };
         
+        var AddColor;
+            self.show = function (anAddColor) {
+                AddColor = anAddColor;
+                form.show();
+            };
+        
         form.btnRefresh.onActionPerformed = function(){
             model.requery();
         };
         
         form.btnAdd.onActionPerformed = function () {
-            require('./ColorsEditor', function(ColorsEditor) {
+            require('ColorsEditor', function(ColorsEditor) {
                 var editor = new ColorsEditor();
-                editor.showModal(function() {
+                editor.show(function() {
                     model.requery();
                 });
             },function() {
@@ -27,26 +33,30 @@ define('ColorsCatalog', ['orm', 'forms', 'ui'], function (Orm, Forms, Ui, Module
             });
         };
         
-        form.btnSelect.onActionPerformed = function () {
-           form.close(model.qColors.cursor); 
+        form.btnSelect.onActionPerformed = function(event) {
+            AddColor(form.modelGrid.selected[0]);
+            model.save();
+            form.close();// TODO Добавьте здесь свой код
         };
         
         form.btnRemove.onActionPerformed = function() {
-            if (form.modelGrid.selected[0]) {
-                model.qColors.remove(form.modelGrid.selected);
-            } else {
-                model.qColors.remove(model.qColors.cursor);
-            }
-            var filterKey = form.filterInput.text;
-            filter(filterKey);
+            if (confirm("Удалить?")) {
+                if (form.modelGrid.selected[0]) {
+                    model.qColors.remove(form.modelGrid.selected);
+                } else {
+                    model.qColors.remove(model.qColors.cursor);
+                }
+                var filterKey = form.filterInput.text;
+                filter(filterKey);
+            };
         };
 
 
         form.btnEdit.onActionPerformed = function () {
             if (model.qColors.cursor) {
-                require('./ColorsEditor', function (ColorsEditor) {
+                require('ColorsEditor', function (ColorsEditor) {
                     var editor = new ColorsEditor(form.modelGrid.selected[0].color_id);
-                    editor.showModal(function () {
+                    editor.show(function () {
                         model.requery(function(){
                             var filterKey = form.filterInput.text;
                             filter(filterKey);

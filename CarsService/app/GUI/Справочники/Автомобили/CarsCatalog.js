@@ -14,20 +14,28 @@ define('CarsCatalog', ['orm', 'forms', 'ui'], function (Orm, Forms, Ui, ModuleNa
         };
         
         var AddModel;
-        self.showModal = function (anAddModel) {
+        self.show = function (anAddModel) {
             AddModel = anAddModel;
-            form.showModal();
+            form.show();
         };
         
-      //  function AddModel(modelCar){   
-      //      model.requery();
-      //  } 
+//        function AddModel(modelCar){   
+//            model.requery();
+//        } 
       
         form.btnSave.onActionPerformed = function (event) {
             model.save();  //Сохраняем изменения
         };
-        form.BtnAdd.onActionPerformed = function (event) {
-            model.qCar.push({});  //Добавляем новую строку
+
+        form.btnAdd.onActionPerformed = function () {
+            require('CarsCatalogEditor', function(CarsCatalogEditor) {
+                var editor = new CarsCatalogEditor();
+                editor.show(function() {
+                    model.requery();
+                });
+            },function() {
+                //Failure procedure
+            });
         };
         
         form.BtnDelete.onActionPerformed = function (event) {
@@ -47,7 +55,7 @@ define('CarsCatalog', ['orm', 'forms', 'ui'], function (Orm, Forms, Ui, ModuleNa
         form.btnSelect.onActionPerformed = function(event) {
             AddModel(form.modelGrid.selected[0]);
             model.save();
-            form.close();// TODO Добавьте здесь свой код
+            form.close();
         };
         
           model.requery(function () {

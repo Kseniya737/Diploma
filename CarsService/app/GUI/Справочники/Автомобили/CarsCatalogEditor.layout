@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><layout title="" view="view">
+  <AnchorsPane background="#ffffff" cursor="0" name="view" prefHeight="142px" prefWidth="483px"/>
+  <Label cursor="0" name="label" parent="view" prefHeight="30px" prefWidth="150px" text="Марка автомобиля">
+    <font family="Arial" size="12" style="1"/>
+    <AnchorsPaneConstraints height="30px" left="20px" top="20px" width="150px"/>
+  </Label>
+  <ModelFormattedField cursor="0" data="qCarCatalogByID" field="cursor.car" format="" name="modelFormattedField" parent="view" prefHeight="30px" prefWidth="280px">
+    <AnchorsPaneConstraints height="30px" left="190px" top="20px" width="280px"/>
+  </ModelFormattedField>
+  <Button cursor="0" icon="icons/22x22/actions/window-close.png" name="btnCancel" parent="view" prefHeight="30px" prefWidth="130px" text="Отмена">
+    <font family="Arial" size="12" style="1"/>
+    <AnchorsPaneConstraints bottom="12px" height="30px" right="13px" width="130px"/>
+  </Button>
+  <Button cursor="0" icon="icons/22x22/actions/dialog-apply.png" name="btnAccept" parent="view" prefHeight="30px" prefWidth="130px" text="Принять">
+    <font family="Arial" size="12" style="1"/>
+    <AnchorsPaneConstraints bottom="12px" height="30px" left="200px" width="130px"/>
+  </Button>
+</layout>

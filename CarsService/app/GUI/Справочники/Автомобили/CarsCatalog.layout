@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?><layout title="" view="view">
   <AnchorsPane background="#ffffff" cursor="0" name="view" prefHeight="504px" prefWidth="653px"/>
   <Label cursor="0" horizontalAlignment="0" horizontalTextPosition="0" name="label" parent="view" prefHeight="30px" prefWidth="300px" text="Справочник автомобилей">
-    <font family="Monospaced" size="14" style="1"/>
+    <font family="Arial" size="14" style="1"/>
     <AnchorsPaneConstraints height="30px" left="180px" top="10px" width="300px"/>
   </Label>
   <ModelGrid cursor="0" data="qCar" name="modelGrid" parent="view" prefHeight="290px" prefWidth="490px" rowsHeight="20">
     <AnchorsPaneConstraints height="290px" left="90px" top="120px" width="490px"/>
     <ServiceGridColumn name="colService" resizable="true"/>
-    <ModelGridColumn field="car_id" name="ID" title="ID" visible="false" width="225px">
+    <ModelGridColumn editor="com.eas.client.forms.components.model.ModelSpin[,0,0,0x0,invalid,layout=java.awt.BorderLayout,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@1edc90c,flags=16777225,maximumSize=,minimumSize=,preferredSize=]" field="car_id" name="ID" title="ID" view="com.eas.client.forms.components.model.ModelSpin[,-224,-19,0x0,invalid,layout=java.awt.BorderLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777225,maximumSize=,minimumSize=,preferredSize=]" visible="false" width="225px">
       <ModelSpin/>
     </ModelGridColumn>
-    <ModelGridColumn field="car" name="Марка" title="Марка" width="224px">
+    <ModelGridColumn editor="com.eas.client.forms.components.model.ModelFormattedField[,0,0,0x0,invalid,layout=java.awt.BorderLayout,alignmentX=0.0,alignmentY=0.0,border=javax.swing.border.LineBorder@42b5cb3d,flags=16777225,maximumSize=,minimumSize=,preferredSize=]" field="car" name="Марка" title="Марка" view="com.eas.client.forms.components.model.ModelFormattedField[,-223,-19,0x0,invalid,layout=java.awt.BorderLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777225,maximumSize=,minimumSize=,preferredSize=]" width="224px">
       <ModelFormattedField format=""/>
     </ModelGridColumn>
   </ModelGrid>
   <Button cursor="0" name="btnSave" parent="view" prefHeight="30px" prefWidth="100px" text="Сохранить">
     <AnchorsPaneConstraints bottom="34px" height="30px" right="73px" width="100px"/>
   </Button>
-  <Button cursor="0" name="BtnAdd" parent="view" prefHeight="30px" prefWidth="90px" text="Добавить">
+  <Button cursor="0" name="btnAdd" parent="view" prefHeight="30px" prefWidth="90px" text="Добавить">
     <AnchorsPaneConstraints bottom="34px" height="30px" left="90px" width="90px"/>
   </Button>
   <Button cursor="0" name="BtnDelete" parent="view" prefHeight="30px" prefWidth="90px" text="Удалить">

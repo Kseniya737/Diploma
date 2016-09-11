@@ -34,18 +34,18 @@ define(['orm', 'forms', 'ui'],
                 };
                 
                 form.mcModel.onSelect = function () {
-                    require('./CarsCatalog', function (CarsCatalog) {
-                        var picker = new NewCar();
-                        picker.showModal(function (addNew) {
+                    require('CarsCatalog', function (CarsCatalog) {
+                        var picker = new CarsCatalog();
+                        picker.show(function (addNew) {
                             form.mcModel.value = addNew;
                         });
                     });
                 };
                 
                 form.mcColor.onSelect = function () {
-                    require('./ColorsCatalog', function (color) {
-                        var picker = new color();
-                        picker.showModal(function (addNew) {
+                    require('ColorsCatalog', function (ColorsCatalog) {
+                        var picker = new ColorsCatalog();
+                        picker.show(function (addNew) {
                             form.mcColor.value = addNew;
                         });
                     });

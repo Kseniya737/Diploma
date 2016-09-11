@@ -1,11 +1,11 @@
 /**
- * @module ColorsEditor
+ * 
  * @author Kseniya
  * 
  */
-define('ColorsEditor', ['orm', 'forms', 'ui'], 
+define('CarsCatalogEditor', ['orm', 'forms', 'ui'], 
     function (Orm, Forms, Ui, ModuleName) {
-        function module_constructor(colorID) {
+        function module_constructor(carID) {
             var self = this
                     , model = Orm.loadModel(ModuleName)
                     , form = Forms.loadForm(ModuleName, model);
@@ -14,11 +14,11 @@ define('ColorsEditor', ['orm', 'forms', 'ui'],
                 form.show();
             };  
 
-            if (colorID) {
-                model.qColorsByID.params.id = colorID;
-                model.qColorsByID.execute();
+            if (carID) {
+                model.qCarCatalogByID.params.id = carID;
+                model.qCarCatalogByID.execute();
             } else {
-                model.qColorsByID.push({});
+                model.qCarCatalogByID.push({});
             }
 
             form.btnAccept.onActionPerformed = function(){
